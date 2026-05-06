@@ -2,7 +2,7 @@ import os
 import requests
 
 
-base_url = os.getenv("OPENAI_BASE_URL", "https://api.tken.shop/v1")
+base_url = os.getenv("OPENAI_BASE_URL", "https://www.tken.shop/v1")
 api_key = os.getenv("OPENAI_API_KEY")
 model = os.getenv("MODEL", "tken-free-model")
 

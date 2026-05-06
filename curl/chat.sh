@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 set -eu
 
-: "${OPENAI_BASE_URL:=https://api.tken.shop/v1}"
+: "${OPENAI_BASE_URL:=https://www.tken.shop/v1}"
 : "${MODEL:=tken-free-model}"
 
 if [ -z "${OPENAI_API_KEY:-}" ]; then

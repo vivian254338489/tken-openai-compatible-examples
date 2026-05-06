@@ -1,4 +1,4 @@
-const baseURL = process.env.OPENAI_BASE_URL || "https://api.tken.shop/v1";
+const baseURL = process.env.OPENAI_BASE_URL || "https://www.tken.shop/v1";
 const apiKey = process.env.OPENAI_API_KEY;
 const model = process.env.MODEL || "tken-free-model";
 

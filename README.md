@@ -11,7 +11,7 @@ Use these examples to test premium GPT models, selected free/low-cost Chinese mo
 3. Run one of the examples.
 
 ```env
-OPENAI_BASE_URL=https://api.tken.shop/v1
+OPENAI_BASE_URL=https://www.tken.shop/v1
 OPENAI_API_KEY=your_api_key_here
 MODEL=tken-free-model
 ```
