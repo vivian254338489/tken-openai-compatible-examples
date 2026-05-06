@@ -1,0 +1,16 @@
+{
+  "providers": [
+    {
+      "name": "tken",
+      "type": "openai-compatible",
+      "baseUrl": "https://www.tken.shop/v1",
+      "apiKeyEnv": "TKEN_API_KEY",
+      "models": ["free-model", "premium-gpt"]
+    }
+  ],
+  "routing": {
+    "defaultProvider": "tken",
+    "defaultModel": "free-model",
+    "premiumModel": "premium-gpt"
+  }
+}
