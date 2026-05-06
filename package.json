@@ -1,0 +1,10 @@
+{
+  "name": "tken-openai-compatible-examples",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "check": "node check.mjs",
+    "node:chat": "node examples/node-chat.mjs"
+  }
+}
