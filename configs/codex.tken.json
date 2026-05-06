@@ -1,0 +1,9 @@
+{
+  "provider": "tken",
+  "base_url": "https://www.tken.shop/v1",
+  "api_key_env": "TKEN_API_KEY",
+  "models": {
+    "default": "free-model",
+    "premium": "premium-gpt"
+  }
+}
