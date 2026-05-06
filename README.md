@@ -26,6 +26,10 @@ Replace the base URL and model names with the actual values from your TKEN dashb
 | Python | `python/chat.py` |
 | cURL | `curl/chat.sh` |
 
+## Publishing Assets
+
+Use `docs/screenshot-gif-brief.md` to capture terminal screenshots and a short GIF before public launch. Do not expose a real API key in any image.
+
 ## Why Use A Multi-Model Gateway?
 
 - Test selected free/low-cost models before paying.
