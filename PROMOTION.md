@@ -27,6 +27,18 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ## Release Notes
 
 ```text
+v0.9.0 adds an Open WebUI + LiteLLM + TKEN stack guide for developers who want a chat UI, a proxy layer, and an OpenAI-compatible model gateway in one workflow:
+
+- guide for the flow Open WebUI -> LiteLLM proxy -> TKEN base URL
+- LiteLLM config that maps a UI-facing route name to a TKEN model ID
+- Open WebUI environment example for connecting to LiteLLM instead of exposing the upstream TKEN key
+- pre-production checklist for virtual keys, model discovery, streaming tests, logging hygiene, retry caps, and spend controls
+- failure map for model discovery, 401, 404, streaming, and cost drift
+
+Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with Open WebUI, LiteLLM, OpenAI, or other model providers.
+```
+
+```text
 v0.8.0 adds an agent and MCP gateway preflight pack for developers wiring OpenAI-compatible model APIs into agent workflows:
 
 - guide that separates MCP server responsibilities from TKEN's model API gateway role

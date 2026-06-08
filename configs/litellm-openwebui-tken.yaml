@@ -1,0 +1,9 @@
+model_list:
+  - model_name: tken-chat
+    litellm_params:
+      model: openai/replace-with-an-available-model
+      api_key: os.environ/TKEN_API_KEY
+      api_base: https://www.tken.shop/v1
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY

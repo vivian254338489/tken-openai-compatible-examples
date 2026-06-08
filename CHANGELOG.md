@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.9.0
+
+- Added an Open WebUI + LiteLLM + TKEN stack guide for developers who want Open WebUI to call a LiteLLM proxy that routes to TKEN.
+- Added LiteLLM and Open WebUI config examples for the stack without storing upstream keys in the UI config.
+- Updated README and docs navigation for the Open WebUI behind LiteLLM workflow.
+
 ## v0.8.0
 
 - Added an agent and MCP gateway preflight guide that separates MCP server responsibilities from TKEN's OpenAI-compatible model gateway role.
