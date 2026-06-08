@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.5.0
+
+- Added a tool integration guide for Open WebUI, LiteLLM, Cursor, Continue, and agent-style configs.
+- Added a demo script for Product Hunt, DEV, HN, and short screen recordings without exposing secrets.
+- Expanded README and docs navigation for tool setup and launch assets.
+
 ## v0.4.0
 
 - Added SDK migration, compatibility, troubleshooting, cost guardrail, and disclosure guides.

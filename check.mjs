@@ -27,6 +27,8 @@ const required = [
   "docs/compatibility-checklist.md",
   "docs/troubleshooting.md",
   "docs/cost-guardrails.md",
+  "docs/tool-integration-guide.md",
+  "docs/demo-script.md",
   "docs/community-disclosure.md",
   ".github/ISSUE_TEMPLATE/bug-report.md",
   ".github/ISSUE_TEMPLATE/compatibility-question.md",
@@ -42,7 +44,7 @@ for (const file of ["configs/codex.tken.json", "configs/openclaw.tken.json"]) {
   JSON.parse(fs.readFileSync(file, "utf8"));
 }
 
-const forbiddenRealKeyPattern = /sk-[A-Za-z0-9_-]{20,}/;
+const forbiddenRealKeyPattern = /sk-(?!your-tken-key\b)[A-Za-z0-9_-]{20,}/;
 for (const file of required) {
   const content = fs.readFileSync(file, "utf8");
   if (forbiddenRealKeyPattern.test(content)) {

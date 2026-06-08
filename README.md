@@ -27,6 +27,8 @@ Disclosure: TKEN is an independent third-party API gateway. It is not officially
 | Check endpoint behavior before launch | `docs/compatibility-checklist.md` |
 | Debug 401, 404, model, quota, timeout, and CORS errors | `docs/troubleshooting.md` |
 | Add route-level model selection and spend controls | `docs/cost-guardrails.md` |
+| Configure Open WebUI, LiteLLM, Cursor, Continue, and agents | `docs/tool-integration-guide.md` |
+| Record a short demo or launch asset without exposing secrets | `docs/demo-script.md` |
 | Share this repo transparently in communities | `docs/community-disclosure.md` |
 
 ## Environment
@@ -71,6 +73,8 @@ $env:TKEN_MODEL="replace-with-an-available-model"
 | Cursor and Continue | `configs/cursor-continue-config.md` |
 | Codex-style config | `configs/codex.tken.json` |
 | OpenClaw-style config | `configs/openclaw.tken.json` |
+
+For setup notes across these tools, see `docs/tool-integration-guide.md`.
 
 ## Smoke Test Without SDKs
 
@@ -165,3 +169,4 @@ Set `TKEN_MODEL_FAST`, `TKEN_MODEL_BALANCED`, or `TKEN_MODEL_REASONING` when you
 - Test non-streaming before streaming.
 - Add retries and timeouts before sending production traffic.
 - Add budget and usage limits before connecting automated agents.
+- Do not expose real keys, account identifiers, usage records, or private prompts in demos, issue reports, screenshots, or community posts.

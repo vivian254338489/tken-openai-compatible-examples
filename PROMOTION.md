@@ -27,6 +27,17 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ## Release Notes
 
 ```text
+v0.5.0 adds launch-ready tool integration and demo assets:
+
+- tool integration guide for Open WebUI, LiteLLM, Cursor, Continue, and agent-style configs
+- demo script for Product Hunt, DEV, HN follow-ups, and short screen recordings
+- screenshot checklist that avoids exposing API keys, account IDs, usage records, private prompts, or provider account screens
+- README and docs navigation updates for developers evaluating OpenAI-compatible gateway setup
+
+Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with model providers.
+```
+
+```text
 v0.4.0 adds migration and compatibility docs for developers evaluating OpenAI-compatible endpoints:
 
 - SDK migration guide for Node.js and Python OpenAI SDK base URL changes

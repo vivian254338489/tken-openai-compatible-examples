@@ -21,6 +21,8 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 | Check endpoint behavior before launch | `docs/compatibility-checklist.md` |
 | Debug setup errors | `docs/troubleshooting.md` |
 | Control spend and routing | `docs/cost-guardrails.md` |
+| Configure tools and agents | `docs/tool-integration-guide.md` |
+| Prepare a demo or launch recording | `docs/demo-script.md` |
 | Share or launch transparently | `docs/community-disclosure.md` |
 
 ## Site Links
@@ -29,5 +31,6 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 - Quickstart: https://www.tken.shop/quickstart/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=docs_index
 - SDK base URL guide: https://www.tken.shop/openai-sdk-base-url/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=docs_index
 - Pricing: https://www.tken.shop/pricing?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=docs_index
+- Tool integration: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=docs_tool_integration
 
 Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with model providers.
