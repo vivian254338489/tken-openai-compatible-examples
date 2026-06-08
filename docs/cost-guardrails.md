@@ -51,8 +51,8 @@ Use hashes or internal IDs instead of storing private user content.
 
 ## Links
 
-- TKEN cost guardrails: https://www.tken.shop/llm-cost-guardrails/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=cost_guardrails
-- Pricing: https://www.tken.shop/pricing?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=cost_guardrails
-- Pricing guide: https://www.tken.shop/api-pricing-guide/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=cost_guardrails
+- TKEN cost guardrails: https://www.tken.shop/llm-cost-guardrails/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=cost_guardrails&utm_id=gh_v070
+- Pricing: https://www.tken.shop/pricing/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=cost_guardrails&utm_id=gh_v070
+- Pricing guide: https://www.tken.shop/api-pricing-guide/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=cost_guardrails&utm_id=gh_v070
 
 Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with model providers.

@@ -43,8 +43,8 @@ The tester reads the API key from `TKEN_API_KEY` and does not print the key.
 
 ## Links
 
-- Quickstart: https://www.tken.shop/quickstart/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=troubleshooting
-- OpenAI SDK base URL: https://www.tken.shop/openai-sdk-base-url/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=troubleshooting
-- Fallback and retries: https://www.tken.shop/fallback-retry-openai-compatible-api/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=troubleshooting
+- Quickstart: https://www.tken.shop/quickstart/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=troubleshooting&utm_id=gh_v070
+- OpenAI SDK base URL: https://www.tken.shop/openai-sdk-base-url/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=troubleshooting&utm_id=gh_v070
+- Fallback and retries: https://www.tken.shop/fallback-retry-openai-compatible-api/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=troubleshooting&utm_id=gh_v070
 
 Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with model providers.

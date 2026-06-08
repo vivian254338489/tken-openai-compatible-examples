@@ -6,10 +6,10 @@ TKEN pricing and model availability can change by account, channel, model family
 
 Site links:
 
-- Live pricing: https://www.tken.shop/pricing/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=pricing_model_selection
-- API pricing guide: https://www.tken.shop/api-pricing-guide/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=pricing_model_selection
-- Cost guardrails: https://www.tken.shop/llm-cost-guardrails/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=pricing_model_selection
-- Developer hub: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=pricing_model_selection
+- Live pricing: https://www.tken.shop/pricing/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=pricing_model_selection&utm_id=gh_v070
+- API pricing guide: https://www.tken.shop/api-pricing-guide/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=pricing_model_selection&utm_id=gh_v070
+- Cost guardrails: https://www.tken.shop/llm-cost-guardrails/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=pricing_model_selection&utm_id=gh_v070
+- Developer hub: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=pricing_model_selection&utm_id=gh_v070
 
 Disclosure: TKEN is an independent third-party API gateway. It is not officially affiliated with OpenAI, Anthropic, Google, DeepSeek, Qwen, Kimi, MiniMax, GLM, xAI, or other model providers.
 

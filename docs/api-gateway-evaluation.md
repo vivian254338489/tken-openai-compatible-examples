@@ -116,8 +116,8 @@ Score each gateway with evidence from tests, not assumptions.
 
 ## Related TKEN Guides
 
-- Developer hub: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=gateway_evaluation
-- OpenAI SDK base URL: https://www.tken.shop/openai-sdk-base-url/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=gateway_evaluation
-- Structured output guide: https://www.tken.shop/structured-output-json-schema/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=gateway_evaluation
-- Cost guardrails: https://www.tken.shop/llm-cost-guardrails/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=gateway_evaluation
-- Pricing: https://www.tken.shop/pricing?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=gateway_evaluation
+- Developer hub: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=gateway_evaluation&utm_id=gh_v070
+- OpenAI SDK base URL: https://www.tken.shop/openai-sdk-base-url/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=gateway_evaluation&utm_id=gh_v070
+- Structured output guide: https://www.tken.shop/structured-output-json-schema/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=gateway_evaluation&utm_id=gh_v070
+- Cost guardrails: https://www.tken.shop/llm-cost-guardrails/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=gateway_evaluation&utm_id=gh_v070
+- Pricing: https://www.tken.shop/pricing/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=gateway_evaluation&utm_id=gh_v070

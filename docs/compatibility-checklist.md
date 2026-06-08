@@ -38,9 +38,9 @@ Run these only when your app uses the feature.
 
 ## Links
 
-- Developer hub: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=compatibility_checklist
-- Streaming guide: https://www.tken.shop/streaming-chat-completions-api/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=compatibility_checklist
-- Structured output guide: https://www.tken.shop/structured-output-json-schema/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=compatibility_checklist
-- Embeddings guide: https://www.tken.shop/embeddings-openai-compatible-api/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=compatibility_checklist
+- Developer hub: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=compatibility_checklist&utm_id=gh_v070
+- Streaming guide: https://www.tken.shop/streaming-chat-completions-api/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=compatibility_checklist&utm_id=gh_v070
+- Structured output guide: https://www.tken.shop/structured-output-json-schema/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=compatibility_checklist&utm_id=gh_v070
+- Embeddings guide: https://www.tken.shop/embeddings-openai-compatible-api/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=compatibility_checklist&utm_id=gh_v070
 
 Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with model providers.
