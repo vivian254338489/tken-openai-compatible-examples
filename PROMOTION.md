@@ -27,6 +27,18 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ## Release Notes
 
 ```text
+v0.7.0 adds a pricing and model selection guide for developers deciding which OpenAI-compatible model routes to use before production:
+
+- workflow for checking live pricing and /v1/models before deployment
+- suggested fast, balanced, reasoning, embedding, and vision route map
+- route-level environment-variable pattern so model IDs can change without business-logic rewrites
+- pre-production checklist for token caps, timeouts, retry limits, fallback decisions, logging hygiene, and budget controls
+- README and docs navigation updates pointing to live pricing, API pricing, model selection, and cost guardrails
+
+Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with model providers.
+```
+
+```text
 v0.6.0 adds an API gateway evaluation guide for developers comparing OpenAI-compatible endpoints:
 
 - compatibility checklist for base URL, /models, chat completions, streaming, structured output, tool calls, and embeddings

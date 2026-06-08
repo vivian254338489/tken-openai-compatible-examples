@@ -27,6 +27,7 @@ const required = [
   "docs/sdk-migration-guide.md",
   "docs/compatibility-checklist.md",
   "docs/troubleshooting.md",
+  "docs/pricing-model-selection.md",
   "docs/cost-guardrails.md",
   "docs/tool-integration-guide.md",
   "docs/demo-script.md",

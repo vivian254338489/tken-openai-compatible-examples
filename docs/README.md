@@ -21,6 +21,7 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 | Move an existing SDK app | `docs/sdk-migration-guide.md` |
 | Check endpoint behavior before launch | `docs/compatibility-checklist.md` |
 | Debug setup errors | `docs/troubleshooting.md` |
+| Select model routes from pricing and `/v1/models` | `docs/pricing-model-selection.md` |
 | Control spend and routing | `docs/cost-guardrails.md` |
 | Configure tools and agents | `docs/tool-integration-guide.md` |
 | Prepare a demo or launch recording | `docs/demo-script.md` |
@@ -31,7 +32,8 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 - Developer hub: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=docs_index
 - Quickstart: https://www.tken.shop/quickstart/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=docs_index
 - SDK base URL guide: https://www.tken.shop/openai-sdk-base-url/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=docs_index
-- Pricing: https://www.tken.shop/pricing?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=docs_index
+- Pricing: https://www.tken.shop/pricing/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=docs_index
+- API pricing guide: https://www.tken.shop/api-pricing-guide/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=docs_index
 - Tool integration: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=docs_tool_integration
 
 Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with model providers.

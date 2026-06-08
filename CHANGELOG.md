@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.7.0
+
+- Added a pricing and model selection guide for choosing route-level model defaults from the live pricing page and `/v1/models`.
+- Added README and docs navigation to pricing, API pricing, model selection, and cost guardrail resources.
+
 ## v0.6.0
 
 - Added an OpenAI-compatible API gateway evaluation guide covering compatibility, tool fit, reliability, cost control, security hygiene, and decision criteria.

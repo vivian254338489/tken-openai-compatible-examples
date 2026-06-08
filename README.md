@@ -15,6 +15,7 @@ Disclosure: TKEN is an independent third-party API gateway. It is not officially
 - Developer hub: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=readme_developer_hub
 - Quickstart: https://www.tken.shop/quickstart/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=readme_quickstart
 - OpenAI SDK base URL: https://www.tken.shop/openai-sdk-base-url/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=readme_openai_sdk
+- Live pricing: https://www.tken.shop/pricing/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=readme_pricing
 - Open WebUI setup: https://www.tken.shop/openwebui-openai-compatible-api/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=readme_openwebui
 - LiteLLM setup: https://www.tken.shop/litellm-openai-compatible-gateway/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=readme_litellm
 - Cost guardrails: https://www.tken.shop/llm-cost-guardrails/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=readme_cost_guardrails
@@ -27,6 +28,7 @@ Disclosure: TKEN is an independent third-party API gateway. It is not officially
 | Move an existing SDK app to a custom base URL | `docs/sdk-migration-guide.md` |
 | Check endpoint behavior before launch | `docs/compatibility-checklist.md` |
 | Debug 401, 404, model, quota, timeout, and CORS errors | `docs/troubleshooting.md` |
+| Select model routes using current pricing and `/v1/models` | `docs/pricing-model-selection.md` |
 | Add route-level model selection and spend controls | `docs/cost-guardrails.md` |
 | Configure Open WebUI, LiteLLM, Cursor, Continue, and agents | `docs/tool-integration-guide.md` |
 | Record a short demo or launch asset without exposing secrets | `docs/demo-script.md` |
