@@ -27,6 +27,18 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ## Release Notes
 
 ```text
+v0.10.0 adds a Continue and Cursor coding-tool migration pack for developers who want an IDE assistant to call an OpenAI-compatible model gateway:
+
+- Continue config.yaml example using provider: openai, apiBase, roles, and secret-based key injection
+- focused guide for validating /v1/models and one non-streaming chat completion before enabling coding-agent workflows
+- Cursor setup notes that distinguish API-key support from base URL override availability in the installed version
+- rollout checklist for low-limit keys, file-write approval, spend caps, and redacted logs/screenshots
+- README and docs navigation updates for coding-tool evaluation
+
+Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with Continue, Cursor, OpenAI, or other model providers.
+```
+
+```text
 v0.9.0 adds an Open WebUI + LiteLLM + TKEN stack guide for developers who want a chat UI, a proxy layer, and an OpenAI-compatible model gateway in one workflow:
 
 - guide for the flow Open WebUI -> LiteLLM proxy -> TKEN base URL

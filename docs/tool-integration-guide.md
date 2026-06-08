@@ -50,7 +50,9 @@ Run a low-volume test route first. Add LiteLLM budget, retry, and logging settin
 
 ## Cursor
 
-Use a custom OpenAI-compatible endpoint if your Cursor version supports one:
+Cursor's public API key documentation currently focuses on supported provider API keys. It notes that custom API keys work for standard chat models and that specialized features such as Tab Completion continue using Cursor's built-in models.
+
+Use a TKEN endpoint only if your installed Cursor version exposes a compatible custom base URL or OpenAI-compatible endpoint setting:
 
 ```text
 Base URL: https://www.tken.shop/v1
@@ -58,27 +60,32 @@ API key: use a local TKEN key
 Model: choose a model returned by /v1/models
 ```
 
-Run a small prompt before enabling agentic coding workflows. Keep a separate low-limit key for experiments.
+Run a small prompt before enabling agentic coding workflows. Keep a separate low-limit key for experiments. If your Cursor build does not expose a custom base URL, use Continue, LiteLLM, or another host that explicitly supports OpenAI-compatible `apiBase` settings.
 
 ## Continue
 
-Example `config.json` style entry:
+Example `config.yaml` entry:
 
-```json
-{
-  "models": [
-    {
-      "title": "TKEN OpenAI-compatible",
-      "provider": "openai",
-      "model": "replace-with-an-available-model",
-      "apiBase": "https://www.tken.shop/v1",
-      "apiKey": "YOUR_TKEN_API_KEY"
-    }
-  ]
-}
+```yaml
+name: TKEN Continue
+version: 0.0.1
+schema: v1
+
+models:
+  - name: TKEN Chat
+    provider: openai
+    model: replace-with-an-available-model
+    apiBase: https://www.tken.shop/v1
+    apiKey: ${{ secrets.TKEN_API_KEY }}
+    roles:
+      - chat
+      - edit
+      - apply
 ```
 
-For team use, inject the key through a secret manager or environment variable instead of storing it in config files.
+Continue's current config docs describe `config.yaml`, the OpenAI provider, `apiBase` for OpenAI-compatible providers, model roles, and secret references. For team use, inject the key through secrets or environment variables instead of storing it in config files.
+
+For a focused coding-tool migration flow, see `docs/continue-cursor-coding-tools.md`.
 
 ## Codex-Style Agent Config
 

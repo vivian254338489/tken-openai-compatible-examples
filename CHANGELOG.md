@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.10.0
+
+- Added a Continue and Cursor coding-tool migration guide for developers wiring IDE assistants to an OpenAI-compatible gateway.
+- Added a Continue `config.yaml` example that uses `provider: openai`, `apiBase`, and secret-based key injection.
+- Reworked Cursor notes to be explicit about current documented API-key limits and to recommend preflight validation before coding-agent use.
+- Updated README, docs navigation, and promotion copy for the coding-tool integration asset.
+
 ## v0.9.0
 
 - Added an Open WebUI + LiteLLM + TKEN stack guide for developers who want Open WebUI to call a LiteLLM proxy that routes to TKEN.

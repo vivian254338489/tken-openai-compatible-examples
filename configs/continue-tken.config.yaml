@@ -1,0 +1,23 @@
+name: TKEN Continue
+version: 0.0.1
+schema: v1
+
+models:
+  - name: TKEN Chat
+    provider: openai
+    model: replace-with-an-available-model
+    apiBase: https://www.tken.shop/v1
+    apiKey: ${{ secrets.TKEN_API_KEY }}
+    roles:
+      - chat
+      - edit
+      - apply
+      - summarize
+    defaultCompletionOptions:
+      temperature: 0.2
+      maxTokens: 1500
+
+rules:
+  - Use the TKEN Chat model for low-risk coding questions first.
+  - Validate the selected model ID with /v1/models before team rollout.
+  - Do not paste API keys, account IDs, private prompts, or customer data into issue reports or screenshots.

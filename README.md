@@ -32,6 +32,7 @@ Disclosure: TKEN is an independent third-party API gateway. It is not officially
 | Add route-level model selection and spend controls | `docs/cost-guardrails.md` |
 | Preflight TKEN for agent and MCP-capable workflows | `docs/agent-mcp-gateway-preflight.md` |
 | Run Open WebUI through LiteLLM to TKEN | `docs/openwebui-litellm-tken-stack.md` |
+| Wire Continue and Cursor-style coding tools to TKEN | `docs/continue-cursor-coding-tools.md` |
 | Configure Open WebUI, LiteLLM, Cursor, Continue, and agents | `docs/tool-integration-guide.md` |
 | Record a short demo or launch asset without exposing secrets | `docs/demo-script.md` |
 | Share this repo transparently in communities | `docs/community-disclosure.md` |
@@ -76,12 +77,12 @@ $env:TKEN_MODEL="replace-with-an-available-model"
 | Open WebUI | `configs/openwebui.env.example` |
 | LiteLLM | `configs/litellm-config.yaml` |
 | Open WebUI + LiteLLM + TKEN | `configs/openwebui-litellm.env.example`, `configs/litellm-openwebui-tken.yaml` |
-| Cursor and Continue | `configs/cursor-continue-config.md` |
+| Continue and Cursor coding tools | `configs/continue-tken.config.yaml`, `configs/cursor-continue-config.md` |
 | Codex-style config | `configs/codex.tken.json` |
 | OpenClaw-style config | `configs/openclaw.tken.json` |
 | Agent gateway preflight profile | `configs/agent-gateway-preflight.json` |
 
-For setup notes across these tools, see `docs/tool-integration-guide.md`. For Open WebUI behind LiteLLM, see `docs/openwebui-litellm-tken-stack.md`. For agent and MCP-capable host preflight, see `docs/agent-mcp-gateway-preflight.md`.
+For setup notes across these tools, see `docs/tool-integration-guide.md`. For Open WebUI behind LiteLLM, see `docs/openwebui-litellm-tken-stack.md`. For coding tools, see `docs/continue-cursor-coding-tools.md`. For agent and MCP-capable host preflight, see `docs/agent-mcp-gateway-preflight.md`.
 
 ## Smoke Test Without SDKs
 
