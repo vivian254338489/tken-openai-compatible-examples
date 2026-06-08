@@ -20,6 +20,7 @@ const required = [
   "configs/litellm-config.yaml",
   "configs/openwebui.env.example",
   "configs/openclaw.tken.json",
+  "configs/agent-gateway-preflight.json",
   "tools/README.md",
   "tools/endpoint-tester.mjs",
   "docs/README.md",
@@ -29,6 +30,7 @@ const required = [
   "docs/troubleshooting.md",
   "docs/pricing-model-selection.md",
   "docs/cost-guardrails.md",
+  "docs/agent-mcp-gateway-preflight.md",
   "docs/tool-integration-guide.md",
   "docs/demo-script.md",
   "docs/community-disclosure.md",
@@ -42,7 +44,11 @@ if (missing.length) {
   process.exit(1);
 }
 
-for (const file of ["configs/codex.tken.json", "configs/openclaw.tken.json"]) {
+for (const file of [
+  "configs/codex.tken.json",
+  "configs/openclaw.tken.json",
+  "configs/agent-gateway-preflight.json",
+]) {
   JSON.parse(fs.readFileSync(file, "utf8"));
 }
 

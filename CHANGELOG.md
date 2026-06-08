@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.8.0
+
+- Added an agent and MCP gateway preflight guide that separates MCP server responsibilities from TKEN's OpenAI-compatible model gateway role.
+- Added an agent gateway preflight JSON profile for internal tools and host configuration reviews.
+- Updated README and docs navigation for agent and MCP-capable workflow setup.
+
 ## v0.7.0
 
 - Added a pricing and model selection guide for choosing route-level model defaults from the live pricing page and `/v1/models`.

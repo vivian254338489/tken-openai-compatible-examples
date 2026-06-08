@@ -27,6 +27,18 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ## Release Notes
 
 ```text
+v0.8.0 adds an agent and MCP gateway preflight pack for developers wiring OpenAI-compatible model APIs into agent workflows:
+
+- guide that separates MCP server responsibilities from TKEN's model API gateway role
+- preflight flow for /v1/models, non-streaming chat completions, host model settings, and secret handling
+- JSON gateway profile for internal tools and agent host configuration reviews
+- failure map for 401, 404, MCP server config, runaway agent loops, host provider mismatch, and secret exposure
+- README and docs navigation updates for agent and MCP-capable workflow setup
+
+Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with model providers or the Model Context Protocol project.
+```
+
+```text
 v0.7.0 adds a pricing and model selection guide for developers deciding which OpenAI-compatible model routes to use before production:
 
 - workflow for checking live pricing and /v1/models before deployment

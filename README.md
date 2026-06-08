@@ -30,6 +30,7 @@ Disclosure: TKEN is an independent third-party API gateway. It is not officially
 | Debug 401, 404, model, quota, timeout, and CORS errors | `docs/troubleshooting.md` |
 | Select model routes using current pricing and `/v1/models` | `docs/pricing-model-selection.md` |
 | Add route-level model selection and spend controls | `docs/cost-guardrails.md` |
+| Preflight TKEN for agent and MCP-capable workflows | `docs/agent-mcp-gateway-preflight.md` |
 | Configure Open WebUI, LiteLLM, Cursor, Continue, and agents | `docs/tool-integration-guide.md` |
 | Record a short demo or launch asset without exposing secrets | `docs/demo-script.md` |
 | Share this repo transparently in communities | `docs/community-disclosure.md` |
@@ -76,8 +77,9 @@ $env:TKEN_MODEL="replace-with-an-available-model"
 | Cursor and Continue | `configs/cursor-continue-config.md` |
 | Codex-style config | `configs/codex.tken.json` |
 | OpenClaw-style config | `configs/openclaw.tken.json` |
+| Agent gateway preflight profile | `configs/agent-gateway-preflight.json` |
 
-For setup notes across these tools, see `docs/tool-integration-guide.md`.
+For setup notes across these tools, see `docs/tool-integration-guide.md`. For agent and MCP-capable host preflight, see `docs/agent-mcp-gateway-preflight.md`.
 
 ## Smoke Test Without SDKs
 

@@ -1,0 +1,38 @@
+{
+  "gateway": {
+    "name": "tken",
+    "type": "openai-compatible-model-api",
+    "base_url": "https://www.tken.shop/v1",
+    "api_key_env": "TKEN_API_KEY"
+  },
+  "mcp_boundary": {
+    "tken_role": "model_api_gateway",
+    "is_mcp_server": false,
+    "mcp_server_config_location": "keep in the agent host or IDE MCP settings",
+    "credential_rule": "store MCP server credentials separately from TKEN_API_KEY"
+  },
+  "model_routes": {
+    "default": {
+      "model_env": "TKEN_MODEL",
+      "use_for": ["drafting", "summaries", "classification", "low-risk agent prompts"]
+    },
+    "reasoning": {
+      "model_env": "TKEN_MODEL_REASONING",
+      "use_for": ["coding", "planning", "multi-step tool workflows"]
+    }
+  },
+  "preflight_checks": [
+    "GET /v1/models returns at least one usable model ID",
+    "non-streaming POST /v1/chat/completions succeeds",
+    "agent host reads the API key from an environment variable or secret store",
+    "MCP server credentials are configured outside this gateway profile",
+    "timeouts, retry caps, token caps, and daily usage limits are enabled",
+    "logs redact API keys, account IDs, private prompts, and tool outputs"
+  ],
+  "safe_defaults": {
+    "test_without_tools_first": true,
+    "enable_read_only_tools_before_write_tools": true,
+    "require_model_ids_from_models_endpoint": true,
+    "keep_keys_out_of_browser_javascript": true
+  }
+}

@@ -23,6 +23,7 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 | Debug setup errors | `docs/troubleshooting.md` |
 | Select model routes from pricing and `/v1/models` | `docs/pricing-model-selection.md` |
 | Control spend and routing | `docs/cost-guardrails.md` |
+| Preflight agent and MCP-capable workflows | `docs/agent-mcp-gateway-preflight.md` |
 | Configure tools and agents | `docs/tool-integration-guide.md` |
 | Prepare a demo or launch recording | `docs/demo-script.md` |
 | Share or launch transparently | `docs/community-disclosure.md` |
@@ -35,5 +36,6 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 - Pricing: https://www.tken.shop/pricing/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=docs_index&utm_id=gh_v070
 - API pricing guide: https://www.tken.shop/api-pricing-guide/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=docs_index&utm_id=gh_v070
 - Tool integration: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=docs_tool_integration&utm_id=gh_v070
+- Agent and MCP gateway preflight: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v080&utm_content=docs_agent_mcp_preflight&utm_id=gh_v080
 
 Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with model providers.
