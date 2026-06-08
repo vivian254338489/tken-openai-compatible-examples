@@ -27,6 +27,17 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ## Release Notes
 
 ```text
+v0.6.0 adds an API gateway evaluation guide for developers comparing OpenAI-compatible endpoints:
+
+- compatibility checklist for base URL, /models, chat completions, streaming, structured output, tool calls, and embeddings
+- integration-fit checklist for Node.js, Python, Open WebUI, LiteLLM, Cursor, Continue, and internal agents
+- reliability, cost-control, security, and decision-matrix sections designed for pre-production evaluation
+- README and docs navigation updates for developers who need a neutral evaluation workflow before adopting a gateway
+
+Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with model providers.
+```
+
+```text
 v0.5.0 adds launch-ready tool integration and demo assets:
 
 - tool integration guide for Open WebUI, LiteLLM, Cursor, Continue, and agent-style configs

@@ -17,6 +17,7 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 
 | Need | Guide |
 | --- | --- |
+| Evaluate an API gateway before adoption | `docs/api-gateway-evaluation.md` |
 | Move an existing SDK app | `docs/sdk-migration-guide.md` |
 | Check endpoint behavior before launch | `docs/compatibility-checklist.md` |
 | Debug setup errors | `docs/troubleshooting.md` |

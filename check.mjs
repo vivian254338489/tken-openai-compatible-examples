@@ -23,6 +23,7 @@ const required = [
   "tools/README.md",
   "tools/endpoint-tester.mjs",
   "docs/README.md",
+  "docs/api-gateway-evaluation.md",
   "docs/sdk-migration-guide.md",
   "docs/compatibility-checklist.md",
   "docs/troubleshooting.md",

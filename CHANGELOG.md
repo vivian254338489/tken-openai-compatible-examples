@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.6.0
+
+- Added an OpenAI-compatible API gateway evaluation guide covering compatibility, tool fit, reliability, cost control, security hygiene, and decision criteria.
+- Added README and docs navigation for the gateway evaluation guide.
+
 ## v0.5.0
 
 - Added a tool integration guide for Open WebUI, LiteLLM, Cursor, Continue, and agent-style configs.
