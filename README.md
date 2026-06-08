@@ -19,6 +19,16 @@ Disclosure: TKEN is an independent third-party API gateway. It is not officially
 - LiteLLM setup: https://www.tken.shop/litellm-openai-compatible-gateway/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=readme_litellm
 - Cost guardrails: https://www.tken.shop/llm-cost-guardrails/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_dev_assets&utm_content=readme_cost_guardrails
 
+## Local Guides
+
+| Need | Guide |
+| --- | --- |
+| Move an existing SDK app to a custom base URL | `docs/sdk-migration-guide.md` |
+| Check endpoint behavior before launch | `docs/compatibility-checklist.md` |
+| Debug 401, 404, model, quota, timeout, and CORS errors | `docs/troubleshooting.md` |
+| Add route-level model selection and spend controls | `docs/cost-guardrails.md` |
+| Share this repo transparently in communities | `docs/community-disclosure.md` |
+
 ## Environment
 
 Set your key locally. Do not commit real API keys.
@@ -48,6 +58,7 @@ $env:TKEN_MODEL="replace-with-an-available-model"
 | Python no-dependency chat completion | `examples/python-chat.py` |
 | Python OpenAI SDK chat completion | `examples/python-openai-sdk.py` |
 | Node.js `/models` and chat smoke test | `examples/smoke-test.mjs` |
+| Cost-aware route-level model selection | `examples/model-router.mjs` |
 | Reusable OpenAI-compatible endpoint tester | `tools/endpoint-tester.mjs` |
 | Browser/Web UI config | `examples/web-ui-config.js` |
 
@@ -137,6 +148,14 @@ premium-gpt   -> coding, hard reasoning, final answers
 ```
 
 Validate `/v1/models` before choosing a production model ID.
+
+Example:
+
+```bash
+node examples/model-router.mjs fast "Summarize this request in one sentence."
+```
+
+Set `TKEN_MODEL_FAST`, `TKEN_MODEL_BALANCED`, or `TKEN_MODEL_REASONING` when you want route-specific model IDs.
 
 ## Safety Notes
 

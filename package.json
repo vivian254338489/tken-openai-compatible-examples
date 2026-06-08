@@ -1,12 +1,13 @@
 {
   "name": "tken-openai-compatible-examples",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": false,
   "type": "module",
   "scripts": {
     "check": "node check.mjs",
     "node:chat": "node examples/node-chat.mjs",
     "node:sdk": "node examples/node-openai-sdk.mjs",
+    "node:router": "node examples/model-router.mjs",
     "smoke": "node examples/smoke-test.mjs",
     "test:endpoint": "node tools/endpoint-tester.mjs"
   }

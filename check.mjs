@@ -3,6 +3,7 @@ import fs from "node:fs";
 const required = [
   "README.md",
   "LICENSE",
+  "CHANGELOG.md",
   "PROMOTION.md",
   ".env.example",
   "examples/curl-chat.sh",
@@ -12,6 +13,7 @@ const required = [
   "examples/python-chat.py",
   "examples/python-openai-sdk.py",
   "examples/smoke-test.mjs",
+  "examples/model-router.mjs",
   "examples/web-ui-config.js",
   "configs/codex.tken.json",
   "configs/cursor-continue-config.md",
@@ -20,6 +22,14 @@ const required = [
   "configs/openclaw.tken.json",
   "tools/README.md",
   "tools/endpoint-tester.mjs",
+  "docs/README.md",
+  "docs/sdk-migration-guide.md",
+  "docs/compatibility-checklist.md",
+  "docs/troubleshooting.md",
+  "docs/cost-guardrails.md",
+  "docs/community-disclosure.md",
+  ".github/ISSUE_TEMPLATE/bug-report.md",
+  ".github/ISSUE_TEMPLATE/compatibility-question.md",
 ];
 
 const missing = required.filter((file) => !fs.existsSync(file));

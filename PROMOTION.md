@@ -27,6 +27,19 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ## Release Notes
 
 ```text
+v0.4.0 adds migration and compatibility docs for developers evaluating OpenAI-compatible endpoints:
+
+- SDK migration guide for Node.js and Python OpenAI SDK base URL changes
+- endpoint compatibility checklist for /models, chat completions, streaming, JSON output, tool calls, and embeddings
+- troubleshooting guide for 401, 404, model ID, quota, timeout, CORS, and streaming issues
+- route-level model selection example for cost-aware application code
+- cost guardrails guide for limits, logging, retries, and fallbacks
+- GitHub issue templates that ask users to redact secrets and private data
+
+Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with model providers.
+```
+
+```text
 v0.3.0 adds a reusable OpenAI-compatible endpoint tester:
 
 - CLI tester for /models and non-streaming chat completions
