@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.13.0
+
+- Added a direct Open WebUI to TKEN setup guide for developers configuring an OpenAI-compatible base URL without an intermediate proxy.
+- Added an Open WebUI direct environment template covering `OPENAI_API_BASE_URL`, `OPENAI_API_KEY`, default model hints, task model hints, and passthrough safety.
+- Updated README, docs navigation, tool integration notes, and promotion copy for the Open WebUI direct setup asset.
+
 ## v0.12.0
 
 - Added a production readiness checklist for route maps, endpoint gates, spend controls, observability, alerts, staged rollout, and rollback.

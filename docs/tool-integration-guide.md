@@ -17,6 +17,7 @@ Disclosure: TKEN is an independent third-party API gateway and is not officially
 Use a server-side environment file or deployment secret:
 
 ```env
+ENABLE_OPENAI_API=True
 OPENAI_API_BASE_URL=https://www.tken.shop/v1
 OPENAI_API_KEY=sk-your-tken-key
 ```
@@ -29,6 +30,8 @@ curl "$OPENAI_API_BASE_URL/models" \
 ```
 
 Then set the default model to an ID returned by `/v1/models`.
+
+For the focused direct setup flow, including the Admin Settings path, Docker notes, default model guidance, and passthrough warning, see `docs/openwebui-direct-tken.md`.
 
 ## LiteLLM
 

@@ -27,6 +27,18 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ## Release Notes
 
 ```text
+v0.13.0 adds a direct Open WebUI setup pack for developers connecting a chat UI to TKEN as an OpenAI-compatible API gateway:
+
+- step-by-step Open WebUI Admin Settings path for adding the TKEN base URL and API key
+- environment template for OPENAI_API_BASE_URL, OPENAI_API_KEY, DEFAULT_MODELS, and TASK_MODEL_EXTERNAL
+- preflight flow that checks /v1/models and one non-streaming chat completion before UI rollout
+- Docker notes, model filter guidance, passthrough warning, and failure map for 401, 404, model discovery, streaming, and cost drift
+- README and docs navigation updates for direct Open WebUI evaluation
+
+Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with Open WebUI, OpenAI, or other model providers.
+```
+
+```text
 v0.12.0 adds a production readiness pack for teams moving from endpoint testing to controlled rollout:
 
 - production readiness checklist covering endpoint gates, route maps, spend controls, observability, alerts, staged rollout, and rollback

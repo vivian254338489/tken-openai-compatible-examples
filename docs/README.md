@@ -24,6 +24,7 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 | Select model routes from pricing and `/v1/models` | `docs/pricing-model-selection.md` |
 | Control spend and routing | `docs/cost-guardrails.md` |
 | Prepare production rollout, alerts, budgets, and rollback | `docs/production-readiness-checklist.md` |
+| Connect Open WebUI directly to TKEN | `docs/openwebui-direct-tken.md` |
 | Preflight agent and MCP-capable workflows | `docs/agent-mcp-gateway-preflight.md` |
 | Run Open WebUI through LiteLLM to TKEN | `docs/openwebui-litellm-tken-stack.md` |
 | Wire Continue and Cursor-style coding tools | `docs/continue-cursor-coding-tools.md` |
@@ -45,5 +46,6 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 - Continue and Cursor coding tools: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v100&utm_content=docs_continue_cursor&utm_id=gh_v100
 - CI endpoint smoke tests: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v110&utm_content=docs_ci_smoke&utm_id=gh_v110
 - Production readiness checklist: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v120&utm_content=docs_production_readiness&utm_id=gh_v120
+- Direct Open WebUI setup: https://www.tken.shop/openwebui-openai-compatible-api/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v130&utm_content=docs_openwebui_direct&utm_id=gh_v130
 
 Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with model providers.

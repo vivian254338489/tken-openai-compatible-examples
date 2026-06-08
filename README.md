@@ -31,6 +31,7 @@ Disclosure: TKEN is an independent third-party API gateway. It is not officially
 | Select model routes using current pricing and `/v1/models` | `docs/pricing-model-selection.md` |
 | Add route-level model selection and spend controls | `docs/cost-guardrails.md` |
 | Prepare production rollout, alerts, spend limits, and rollback | `docs/production-readiness-checklist.md` |
+| Connect Open WebUI directly to TKEN | `docs/openwebui-direct-tken.md` |
 | Preflight TKEN for agent and MCP-capable workflows | `docs/agent-mcp-gateway-preflight.md` |
 | Run Open WebUI through LiteLLM to TKEN | `docs/openwebui-litellm-tken-stack.md` |
 | Wire Continue and Cursor-style coding tools to TKEN | `docs/continue-cursor-coding-tools.md` |
@@ -77,7 +78,8 @@ $env:TKEN_MODEL="replace-with-an-available-model"
 
 | Tool | File |
 | --- | --- |
-| Open WebUI | `configs/openwebui.env.example` |
+| Open WebUI direct to TKEN | `configs/openwebui-direct-tken.env.example` |
+| Open WebUI minimal template | `configs/openwebui.env.example` |
 | LiteLLM | `configs/litellm-config.yaml` |
 | Open WebUI + LiteLLM + TKEN | `configs/openwebui-litellm.env.example`, `configs/litellm-openwebui-tken.yaml` |
 | Continue and Cursor coding tools | `configs/continue-tken.config.yaml`, `configs/cursor-continue-config.md` |
@@ -86,7 +88,7 @@ $env:TKEN_MODEL="replace-with-an-available-model"
 | OpenClaw-style config | `configs/openclaw.tken.json` |
 | Agent gateway preflight profile | `configs/agent-gateway-preflight.json` |
 
-For setup notes across these tools, see `docs/tool-integration-guide.md`. For Open WebUI behind LiteLLM, see `docs/openwebui-litellm-tken-stack.md`. For coding tools, see `docs/continue-cursor-coding-tools.md`. For agent and MCP-capable host preflight, see `docs/agent-mcp-gateway-preflight.md`.
+For setup notes across these tools, see `docs/tool-integration-guide.md`. For direct Open WebUI setup, see `docs/openwebui-direct-tken.md`. For Open WebUI behind LiteLLM, see `docs/openwebui-litellm-tken-stack.md`. For coding tools, see `docs/continue-cursor-coding-tools.md`. For agent and MCP-capable host preflight, see `docs/agent-mcp-gateway-preflight.md`.
 
 For CI checks, see `docs/ci-endpoint-smoke-tests.md`. The included GitHub Actions workflow is manual only, uses the `TKEN_API_KEY` repository secret, and defaults to `/models` reachability before optional chat completion testing.
 
