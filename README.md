@@ -48,6 +48,7 @@ $env:TKEN_MODEL="replace-with-an-available-model"
 | Python no-dependency chat completion | `examples/python-chat.py` |
 | Python OpenAI SDK chat completion | `examples/python-openai-sdk.py` |
 | Node.js `/models` and chat smoke test | `examples/smoke-test.mjs` |
+| Reusable OpenAI-compatible endpoint tester | `tools/endpoint-tester.mjs` |
 | Browser/Web UI config | `examples/web-ui-config.js` |
 
 ## Tool Configs
@@ -76,6 +77,27 @@ curl "$TKEN_BASE_URL/chat/completions" \
     "messages": [{"role": "user", "content": "Reply with one short sentence."}]
   }'
 ```
+
+## Endpoint Tester CLI
+
+Use the reusable tester when you want a structured compatibility check before wiring an endpoint into an app:
+
+```bash
+node tools/endpoint-tester.mjs \
+  --base-url "$TKEN_BASE_URL" \
+  --api-key-env TKEN_API_KEY \
+  --model "$TKEN_MODEL"
+```
+
+It checks:
+
+- `GET /models`
+- model ID discovery
+- optional non-streaming `POST /chat/completions`
+- timeout handling
+- JSON output for CI or diagnostics
+
+The tester reads API keys from environment variables only. It does not store keys or print keys.
 
 ## Node.js OpenAI SDK
 
@@ -119,6 +141,7 @@ Validate `/v1/models` before choosing a production model ID.
 ## Safety Notes
 
 - Keep API keys server-side. Do not put TKEN keys in public browser JavaScript.
+- Prefer environment-variable key injection over command-line key arguments.
 - Validate `/v1/models` before choosing a model ID.
 - Test non-streaming before streaming.
 - Add retries and timeouts before sending production traffic.

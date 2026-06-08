@@ -18,6 +18,8 @@ const required = [
   "configs/litellm-config.yaml",
   "configs/openwebui.env.example",
   "configs/openclaw.tken.json",
+  "tools/README.md",
+  "tools/endpoint-tester.mjs",
 ];
 
 const missing = required.filter((file) => !fs.existsSync(file));
