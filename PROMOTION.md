@@ -4,27 +4,45 @@
 
 ```text
 openai-compatible
-api-examples
 ai-api
+api-gateway
 curl
 nodejs
 python
-codex
-openclaw
-tken
-model-routing
+openai-sdk
+litellm
+openwebui
+cursor
+continue
+developer-tools
+llm
 ```
 
 ## Short Description
 
 ```text
-Copy-paste curl, Node.js, Python, Web UI, Codex-style, and OpenClaw-style examples for TKEN/OpenAI-compatible APIs.
+Examples and smoke tests for using TKEN as an independent OpenAI-compatible multi-model API gateway.
+```
+
+## Release Notes
+
+```text
+v0.2.0 expands the TKEN developer examples:
+
+- Node.js OpenAI SDK example with custom baseURL
+- Python OpenAI SDK example with base_url
+- curl quickstart with /models validation
+- no-dependency endpoint smoke test
+- Open WebUI, LiteLLM, Cursor, and Continue setup snippets
+- UTM links to TKEN developer guides
+
+Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with model providers.
 ```
 
 ## Soft Launch Draft
 
 ```text
-I collected small copy-paste examples for OpenAI-compatible API base URLs: curl, Node.js, Python, Web UI config, Codex-style config, and OpenClaw-style config.
+I updated a small set of examples for OpenAI-compatible API base URLs: curl, Node.js, Python, OpenAI SDK base URL overrides, Open WebUI, LiteLLM, Cursor, Continue, and a no-dependency smoke test.
 
-Disclosure: I work on TKEN-related tooling. The examples default to TKEN, but the base URL can be changed to any OpenAI-compatible provider.
+Disclosure: I work on TKEN-related tooling. The examples default to TKEN, an independent API gateway, but the base URL pattern is useful for checking any OpenAI-compatible endpoint. TKEN is not officially affiliated with model providers.
 ```
