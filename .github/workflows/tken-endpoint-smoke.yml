@@ -1,0 +1,66 @@
+name: tken endpoint smoke
+
+on:
+  workflow_dispatch:
+    inputs:
+      base_url:
+        description: "OpenAI-compatible base URL"
+        required: true
+        default: "https://www.tken.shop/v1"
+        type: string
+      model:
+        description: "Optional model ID. Blank uses the first /models result."
+        required: false
+        default: ""
+        type: string
+      run_chat:
+        description: "Run one non-streaming chat completion after /models."
+        required: true
+        default: false
+        type: boolean
+      timeout_ms:
+        description: "Per-request timeout in milliseconds."
+        required: true
+        default: 20000
+        type: number
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    env:
+      TKEN_API_KEY: ${{ secrets.TKEN_API_KEY }}
+      TKEN_BASE_URL: ${{ inputs.base_url }}
+      TKEN_MODEL: ${{ inputs.model }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Validate secret
+        shell: bash
+        run: |
+          if [ -z "$TKEN_API_KEY" ]; then
+            echo "Missing TKEN_API_KEY repository secret."
+            echo "Do not commit real API keys. Store a low-limit test key as a repository secret."
+            exit 1
+          fi
+
+      - name: Run endpoint smoke test
+        shell: bash
+        run: |
+          args=(--base-url "$TKEN_BASE_URL" --api-key-env TKEN_API_KEY --timeout-ms "${{ inputs.timeout_ms }}" --json)
+
+          if [ -n "$TKEN_MODEL" ]; then
+            args+=(--model "$TKEN_MODEL")
+          fi
+
+          if [ "${{ inputs.run_chat }}" != "true" ]; then
+            args+=(--skip-chat)
+          fi
+
+          node tools/endpoint-tester.mjs "${args[@]}"

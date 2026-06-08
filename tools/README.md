@@ -46,3 +46,9 @@ node tools/endpoint-tester.mjs `
 - Prefer a test key with low limits.
 - Run `/models` before selecting a production model ID.
 - Test non-streaming chat before streaming, tool calls, or agentic workflows.
+
+## GitHub Actions
+
+For a manual CI smoke test, see `../docs/ci-endpoint-smoke-tests.md` and `../.github/workflows/tken-endpoint-smoke.yml`.
+
+The workflow is triggered with `workflow_dispatch`, reads `TKEN_API_KEY` from repository secrets, and defaults to a `/models`-only check unless `run_chat` is enabled.

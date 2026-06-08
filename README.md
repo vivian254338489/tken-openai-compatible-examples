@@ -33,6 +33,7 @@ Disclosure: TKEN is an independent third-party API gateway. It is not officially
 | Preflight TKEN for agent and MCP-capable workflows | `docs/agent-mcp-gateway-preflight.md` |
 | Run Open WebUI through LiteLLM to TKEN | `docs/openwebui-litellm-tken-stack.md` |
 | Wire Continue and Cursor-style coding tools to TKEN | `docs/continue-cursor-coding-tools.md` |
+| Add a manual GitHub Actions endpoint smoke test | `docs/ci-endpoint-smoke-tests.md` |
 | Configure Open WebUI, LiteLLM, Cursor, Continue, and agents | `docs/tool-integration-guide.md` |
 | Record a short demo or launch asset without exposing secrets | `docs/demo-script.md` |
 | Share this repo transparently in communities | `docs/community-disclosure.md` |
@@ -68,6 +69,7 @@ $env:TKEN_MODEL="replace-with-an-available-model"
 | Node.js `/models` and chat smoke test | `examples/smoke-test.mjs` |
 | Cost-aware route-level model selection | `examples/model-router.mjs` |
 | Reusable OpenAI-compatible endpoint tester | `tools/endpoint-tester.mjs` |
+| Manual GitHub Actions endpoint smoke test | `.github/workflows/tken-endpoint-smoke.yml` |
 | Browser/Web UI config | `examples/web-ui-config.js` |
 
 ## Tool Configs
@@ -83,6 +85,8 @@ $env:TKEN_MODEL="replace-with-an-available-model"
 | Agent gateway preflight profile | `configs/agent-gateway-preflight.json` |
 
 For setup notes across these tools, see `docs/tool-integration-guide.md`. For Open WebUI behind LiteLLM, see `docs/openwebui-litellm-tken-stack.md`. For coding tools, see `docs/continue-cursor-coding-tools.md`. For agent and MCP-capable host preflight, see `docs/agent-mcp-gateway-preflight.md`.
+
+For CI checks, see `docs/ci-endpoint-smoke-tests.md`. The included GitHub Actions workflow is manual only, uses the `TKEN_API_KEY` repository secret, and defaults to `/models` reachability before optional chat completion testing.
 
 ## Smoke Test Without SDKs
 
@@ -177,4 +181,5 @@ Set `TKEN_MODEL_FAST`, `TKEN_MODEL_BALANCED`, or `TKEN_MODEL_REASONING` when you
 - Test non-streaming before streaming.
 - Add retries and timeouts before sending production traffic.
 - Add budget and usage limits before connecting automated agents.
+- Keep CI endpoint checks manual until key limits, ownership, and alerting are clear.
 - Do not expose real keys, account identifiers, usage records, or private prompts in demos, issue reports, screenshots, or community posts.

@@ -26,6 +26,7 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 | Preflight agent and MCP-capable workflows | `docs/agent-mcp-gateway-preflight.md` |
 | Run Open WebUI through LiteLLM to TKEN | `docs/openwebui-litellm-tken-stack.md` |
 | Wire Continue and Cursor-style coding tools | `docs/continue-cursor-coding-tools.md` |
+| Add a manual GitHub Actions endpoint smoke test | `docs/ci-endpoint-smoke-tests.md` |
 | Configure tools and agents | `docs/tool-integration-guide.md` |
 | Prepare a demo or launch recording | `docs/demo-script.md` |
 | Share or launch transparently | `docs/community-disclosure.md` |
@@ -41,5 +42,6 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 - Agent and MCP gateway preflight: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v080&utm_content=docs_agent_mcp_preflight&utm_id=gh_v080
 - Open WebUI + LiteLLM stack: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v090&utm_content=docs_openwebui_litellm_stack&utm_id=gh_v090
 - Continue and Cursor coding tools: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v100&utm_content=docs_continue_cursor&utm_id=gh_v100
+- CI endpoint smoke tests: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v110&utm_content=docs_ci_smoke&utm_id=gh_v110
 
 Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with model providers.

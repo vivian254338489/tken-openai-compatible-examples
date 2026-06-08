@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.11.0
+
+- Added a manual GitHub Actions endpoint smoke-test workflow for `/v1/models` and optional non-streaming chat checks.
+- Added a CI endpoint smoke-test guide covering workflow inputs, `TKEN_API_KEY` secret handling, failure mapping, and rollout safety.
+- Updated README, docs navigation, tools documentation, and promotion copy for teams validating TKEN before production use.
+
 ## v0.10.0
 
 - Added a Continue and Cursor coding-tool migration guide for developers wiring IDE assistants to an OpenAI-compatible gateway.

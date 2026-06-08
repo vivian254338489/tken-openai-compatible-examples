@@ -27,6 +27,18 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ## Release Notes
 
 ```text
+v0.11.0 adds a manual GitHub Actions endpoint smoke-test pack for teams validating an OpenAI-compatible API gateway before production use:
+
+- workflow_dispatch-only GitHub Actions workflow, so checks do not run on push, pull request, or schedule
+- /v1/models reachability check by default, with optional non-streaming chat completion test
+- TKEN_API_KEY repository secret handling with no key committed or printed
+- CI guide covering workflow inputs, failure mapping, rollout order, and redaction hygiene
+- README, docs, and tools navigation updates for CI validation
+
+Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with GitHub, OpenAI, or other model providers.
+```
+
+```text
 v0.10.0 adds a Continue and Cursor coding-tool migration pack for developers who want an IDE assistant to call an OpenAI-compatible model gateway:
 
 - Continue config.yaml example using provider: openai, apiBase, roles, and secret-based key injection
