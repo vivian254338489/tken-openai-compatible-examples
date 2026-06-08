@@ -23,6 +23,7 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 | Debug setup errors | `docs/troubleshooting.md` |
 | Select model routes from pricing and `/v1/models` | `docs/pricing-model-selection.md` |
 | Control spend and routing | `docs/cost-guardrails.md` |
+| Prepare production rollout, alerts, budgets, and rollback | `docs/production-readiness-checklist.md` |
 | Preflight agent and MCP-capable workflows | `docs/agent-mcp-gateway-preflight.md` |
 | Run Open WebUI through LiteLLM to TKEN | `docs/openwebui-litellm-tken-stack.md` |
 | Wire Continue and Cursor-style coding tools | `docs/continue-cursor-coding-tools.md` |
@@ -43,5 +44,6 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 - Open WebUI + LiteLLM stack: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v090&utm_content=docs_openwebui_litellm_stack&utm_id=gh_v090
 - Continue and Cursor coding tools: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v100&utm_content=docs_continue_cursor&utm_id=gh_v100
 - CI endpoint smoke tests: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v110&utm_content=docs_ci_smoke&utm_id=gh_v110
+- Production readiness checklist: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v120&utm_content=docs_production_readiness&utm_id=gh_v120
 
 Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with model providers.

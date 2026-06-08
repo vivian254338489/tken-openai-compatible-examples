@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.12.0
+
+- Added a production readiness checklist for route maps, endpoint gates, spend controls, observability, alerts, staged rollout, and rollback.
+- Added a versionable production readiness JSON template for teams preparing TKEN gateway adoption.
+- Updated README, docs navigation, compatibility, cost guardrails, and promotion copy for production rollout evaluation.
+
 ## v0.11.0
 
 - Added a manual GitHub Actions endpoint smoke-test workflow for `/v1/models` and optional non-streaming chat checks.

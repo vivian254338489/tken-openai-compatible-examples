@@ -30,6 +30,7 @@ Disclosure: TKEN is an independent third-party API gateway. It is not officially
 | Debug 401, 404, model, quota, timeout, and CORS errors | `docs/troubleshooting.md` |
 | Select model routes using current pricing and `/v1/models` | `docs/pricing-model-selection.md` |
 | Add route-level model selection and spend controls | `docs/cost-guardrails.md` |
+| Prepare production rollout, alerts, spend limits, and rollback | `docs/production-readiness-checklist.md` |
 | Preflight TKEN for agent and MCP-capable workflows | `docs/agent-mcp-gateway-preflight.md` |
 | Run Open WebUI through LiteLLM to TKEN | `docs/openwebui-litellm-tken-stack.md` |
 | Wire Continue and Cursor-style coding tools to TKEN | `docs/continue-cursor-coding-tools.md` |
@@ -80,6 +81,7 @@ $env:TKEN_MODEL="replace-with-an-available-model"
 | LiteLLM | `configs/litellm-config.yaml` |
 | Open WebUI + LiteLLM + TKEN | `configs/openwebui-litellm.env.example`, `configs/litellm-openwebui-tken.yaml` |
 | Continue and Cursor coding tools | `configs/continue-tken.config.yaml`, `configs/cursor-continue-config.md` |
+| Production readiness template | `configs/production-readiness.template.json` |
 | Codex-style config | `configs/codex.tken.json` |
 | OpenClaw-style config | `configs/openclaw.tken.json` |
 | Agent gateway preflight profile | `configs/agent-gateway-preflight.json` |
@@ -182,4 +184,5 @@ Set `TKEN_MODEL_FAST`, `TKEN_MODEL_BALANCED`, or `TKEN_MODEL_REASONING` when you
 - Add retries and timeouts before sending production traffic.
 - Add budget and usage limits before connecting automated agents.
 - Keep CI endpoint checks manual until key limits, ownership, and alerting are clear.
+- Keep a documented rollback route map before moving user-facing traffic.
 - Do not expose real keys, account identifiers, usage records, or private prompts in demos, issue reports, screenshots, or community posts.

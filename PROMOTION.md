@@ -27,6 +27,17 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ## Release Notes
 
 ```text
+v0.12.0 adds a production readiness pack for teams moving from endpoint testing to controlled rollout:
+
+- production readiness checklist covering endpoint gates, route maps, spend controls, observability, alerts, staged rollout, and rollback
+- versionable JSON template for gateway base URL checks, route limits, budgets, alert thresholds, and rollback ownership
+- cross-links from compatibility and cost guardrail docs so developers can move from smoke tests to production evaluation
+- README and docs navigation updates for production rollout planning
+
+Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with OpenAI or other model providers.
+```
+
+```text
 v0.11.0 adds a manual GitHub Actions endpoint smoke-test pack for teams validating an OpenAI-compatible API gateway before production use:
 
 - workflow_dispatch-only GitHub Actions workflow, so checks do not run on push, pull request, or schedule

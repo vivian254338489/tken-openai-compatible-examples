@@ -2,6 +2,8 @@
 
 Use these guardrails before connecting automated agents, batch jobs, or user-facing production traffic.
 
+For a complete rollout gate with alerts, rollback, and a versioned JSON template, see `docs/production-readiness-checklist.md` and `configs/production-readiness.template.json`.
+
 ## Route By Task Class
 
 Create route names in your app instead of hard-coding provider model IDs everywhere.
@@ -54,5 +56,6 @@ Use hashes or internal IDs instead of storing private user content.
 - TKEN cost guardrails: https://www.tken.shop/llm-cost-guardrails/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=cost_guardrails&utm_id=gh_v070
 - Pricing: https://www.tken.shop/pricing/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=cost_guardrails&utm_id=gh_v070
 - Pricing guide: https://www.tken.shop/api-pricing-guide/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=cost_guardrails&utm_id=gh_v070
+- Production readiness: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v120&utm_content=cost_guardrails_production_readiness&utm_id=gh_v120
 
 Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with model providers.

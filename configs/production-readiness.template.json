@@ -1,0 +1,86 @@
+{
+  "gateway": {
+    "baseUrl": "https://www.tken.shop/v1",
+    "modelsCheck": {
+      "required": true,
+      "minimumModelCount": 1,
+      "timeoutMs": 10000
+    },
+    "chatCheck": {
+      "requiredBeforeProduction": true,
+      "streamingCheckRequiredOnlyIfUsed": true,
+      "timeoutMs": 20000
+    }
+  },
+  "routes": [
+    {
+      "name": "fast-summary",
+      "modelEnv": "TKEN_MODEL_FAST",
+      "useCases": ["summaries", "classification", "extraction"],
+      "maxTokens": 800,
+      "timeoutMs": 15000,
+      "retryLimit": 1,
+      "fallbackRoute": "balanced-chat"
+    },
+    {
+      "name": "balanced-chat",
+      "modelEnv": "TKEN_MODEL_BALANCED",
+      "useCases": ["customer chat", "drafting", "general app responses"],
+      "maxTokens": 1600,
+      "timeoutMs": 25000,
+      "retryLimit": 1,
+      "fallbackRoute": "fallback-chat"
+    },
+    {
+      "name": "coding-reasoning",
+      "modelEnv": "TKEN_MODEL_REASONING",
+      "useCases": ["coding", "analysis", "hard reasoning"],
+      "maxTokens": 3000,
+      "timeoutMs": 45000,
+      "retryLimit": 0,
+      "fallbackRoute": ""
+    }
+  ],
+  "budgets": {
+    "dailySpendLimitUsd": "set-in-account-or-internal-metering",
+    "perUserDailyRequestLimit": 100,
+    "perJobRequestLimit": 20,
+    "batchHardStopMinutes": 30,
+    "agentMaxToolIterations": 8
+  },
+  "observability": {
+    "requiredFields": [
+      "timestamp",
+      "route_name",
+      "model",
+      "http_status",
+      "latency_ms",
+      "retry_count",
+      "prompt_tokens",
+      "completion_tokens",
+      "total_tokens",
+      "user_or_job_id_hash"
+    ],
+    "doNotLog": [
+      "api_key",
+      "full_authorization_header",
+      "raw_private_prompt",
+      "customer_personal_data",
+      "provider_account_screen"
+    ]
+  },
+  "alerts": {
+    "authErrorRatePercent": 1,
+    "quotaErrorRatePercent": 1,
+    "serverErrorRatePercent": 3,
+    "p95LatencyMs": 30000,
+    "emptyModelList": true,
+    "dailySpendLimitPercent": 80
+  },
+  "rollback": {
+    "keepPreviousRouteMap": true,
+    "disableAgentsFirst": true,
+    "fallbackToKnownModelRoute": true,
+    "owner": "set-on-call-owner"
+  }
+}

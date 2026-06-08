@@ -35,6 +35,7 @@ Run these only when your app uses the feature.
 - Route simple tasks to cheaper or faster models first.
 - Keep a tested fallback model for critical workflows.
 - Review pricing and recharge rules before large batch jobs.
+- Before user-facing rollout, complete `docs/production-readiness-checklist.md`.
 
 ## Links
 
@@ -42,5 +43,6 @@ Run these only when your app uses the feature.
 - Streaming guide: https://www.tken.shop/streaming-chat-completions-api/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=compatibility_checklist&utm_id=gh_v070
 - Structured output guide: https://www.tken.shop/structured-output-json-schema/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=compatibility_checklist&utm_id=gh_v070
 - Embeddings guide: https://www.tken.shop/embeddings-openai-compatible-api/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=compatibility_checklist&utm_id=gh_v070
+- Production readiness: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v120&utm_content=compatibility_production_readiness&utm_id=gh_v120
 
 Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with model providers.
