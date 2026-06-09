@@ -6,7 +6,7 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 
 ## Recommended Order
 
-1. Run `node tools/endpoint-tester.mjs --skip-chat` to confirm `/v1/models`.
+1. Follow `docs/endpoint-preflight-playbook.md` and run `node tools/endpoint-tester.mjs --skip-chat` to confirm `/v1/models`.
 2. Pick one model ID returned by `/v1/models`.
 3. Run a non-streaming chat completion with the tester.
 4. Switch one OpenAI SDK integration to `https://www.tken.shop/v1`.
@@ -19,6 +19,7 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 | --- | --- |
 | Evaluate an API gateway before adoption | `docs/api-gateway-evaluation.md` |
 | Move an existing SDK app | `docs/sdk-migration-guide.md` |
+| Run endpoint preflight and interpret tester output | `docs/endpoint-preflight-playbook.md` |
 | Check endpoint behavior before launch | `docs/compatibility-checklist.md` |
 | Debug setup errors | `docs/troubleshooting.md` |
 | Select model routes from pricing and `/v1/models` | `docs/pricing-model-selection.md` |

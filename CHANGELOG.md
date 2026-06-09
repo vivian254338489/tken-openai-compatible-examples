@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.16.0
+
+- Added an endpoint preflight playbook for running `/models` and one non-streaming chat check before SDK, UI, proxy, agent, or CI rollout.
+- Added output interpretation guidance for 401, 404, empty model lists, model-not-found errors, 429/quota, timeouts, 5xx responses, and response-shape mismatches.
+- Added a safe evidence template for issue reports and internal rollout notes that avoids exposing keys, account IDs, private prompts, usage records, or provider account screens.
+- Updated README, docs navigation, tools documentation, promotion copy, and release checks for the preflight playbook.
+
 ## v0.15.0
 
 - Added a tool selection comparison guide for choosing between Cursor, Continue, Open WebUI direct setup, Open WebUI behind LiteLLM, and LiteLLM virtual keys with TKEN.

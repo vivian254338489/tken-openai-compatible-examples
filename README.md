@@ -26,6 +26,7 @@ Disclosure: TKEN is an independent third-party API gateway. It is not officially
 | --- | --- |
 | Evaluate an OpenAI-compatible gateway before adoption | `docs/api-gateway-evaluation.md` |
 | Move an existing SDK app to a custom base URL | `docs/sdk-migration-guide.md` |
+| Run endpoint preflight and interpret tester output | `docs/endpoint-preflight-playbook.md` |
 | Check endpoint behavior before launch | `docs/compatibility-checklist.md` |
 | Debug 401, 404, model, quota, timeout, and CORS errors | `docs/troubleshooting.md` |
 | Select model routes using current pricing and `/v1/models` | `docs/pricing-model-selection.md` |
@@ -132,6 +133,8 @@ It checks:
 - JSON output for CI or diagnostics
 
 The tester reads API keys from environment variables only. It does not store keys or print keys.
+
+For a step-by-step preflight sequence, failure mapping, and safe issue-report evidence template, see `docs/endpoint-preflight-playbook.md`.
 
 ## Node.js OpenAI SDK
 

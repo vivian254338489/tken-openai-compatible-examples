@@ -33,6 +33,7 @@ const required = [
   "docs/README.md",
   "docs/api-gateway-evaluation.md",
   "docs/sdk-migration-guide.md",
+  "docs/endpoint-preflight-playbook.md",
   "docs/compatibility-checklist.md",
   "docs/troubleshooting.md",
   "docs/pricing-model-selection.md",

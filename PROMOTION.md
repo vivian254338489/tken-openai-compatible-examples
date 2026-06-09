@@ -27,6 +27,18 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ## Release Notes
 
 ```text
+v0.16.0 adds an endpoint preflight playbook for developers validating TKEN before SDK, UI, proxy, agent, or CI rollout:
+
+- recommended sequence for confirming the base URL includes /v1, running /models only, selecting a returned model ID, and running one non-streaming chat completion
+- output interpretation for 401, 404, empty model lists, model-not-found errors, 429/quota, timeouts, 5xx responses, and response-shape mismatches
+- safe evidence template for GitHub issues, team rollout notes, and deployment handoffs without exposing keys, account IDs, private prompts, usage records, or provider account screens
+- CLI examples for `node tools/endpoint-tester.mjs --skip-chat --json` and one selected-model chat check
+- README, docs navigation, tools documentation, and release checks for preflight adoption
+
+Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with OpenAI or other model providers.
+```
+
+```text
 v0.15.0 adds a tool selection comparison guide for developers deciding where TKEN should sit in an OpenAI-compatible workflow:
 
 - Cursor vs Continue vs Open WebUI vs LiteLLM decision matrix

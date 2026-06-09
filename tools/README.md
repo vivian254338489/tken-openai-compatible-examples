@@ -39,6 +39,18 @@ node tools/endpoint-tester.mjs `
 --help                 Print help.
 ```
 
+## Preflight Playbook
+
+For a rollout-ready sequence, start with `../docs/endpoint-preflight-playbook.md`.
+
+Recommended order:
+
+1. Confirm the base URL ends in `/v1`.
+2. Run `/models` only with `--skip-chat --json`.
+3. Choose a model ID returned by `/models`.
+4. Run one non-streaming chat completion.
+5. Save only redacted evidence: status, model count, selected model, timeout, failure class, and a non-sensitive preview.
+
 ## Security Notes
 
 - The tester reads API keys from environment variables only.
