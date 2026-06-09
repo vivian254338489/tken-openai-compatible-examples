@@ -27,6 +27,18 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ## Release Notes
 
 ```text
+v0.15.0 adds a tool selection comparison guide for developers deciding where TKEN should sit in an OpenAI-compatible workflow:
+
+- Cursor vs Continue vs Open WebUI vs LiteLLM decision matrix
+- recommendations for IDE coding, browser chat UI, shared team proxying, and virtual-key governed rollout
+- comparison of base URL support, key handling, team control, budget control, model discovery, and production readiness
+- preflight flow for /v1/models, one non-streaming chat completion, low-limit keys, and redacted logs/screenshots
+- README, docs navigation, and tool integration updates for high-intent developer evaluation
+
+Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with Cursor, Continue, Open WebUI, LiteLLM, OpenAI, or other model providers.
+```
+
+```text
 v0.14.0 adds a LiteLLM virtual key spend-control pack for teams routing Open WebUI, internal tools, or agents to TKEN through a managed proxy:
 
 - guide for the flow apps/Open WebUI/internal tools -> LiteLLM virtual key -> TKEN OpenAI-compatible base URL

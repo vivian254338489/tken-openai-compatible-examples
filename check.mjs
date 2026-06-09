@@ -43,6 +43,7 @@ const required = [
   "docs/openwebui-litellm-tken-stack.md",
   "docs/litellm-virtual-keys-spend-control.md",
   "docs/continue-cursor-coding-tools.md",
+  "docs/cursor-continue-openwebui-litellm-comparison.md",
   "docs/ci-endpoint-smoke-tests.md",
   "docs/tool-integration-guide.md",
   "docs/demo-script.md",

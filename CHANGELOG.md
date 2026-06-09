@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.15.0
+
+- Added a tool selection comparison guide for choosing between Cursor, Continue, Open WebUI direct setup, Open WebUI behind LiteLLM, and LiteLLM virtual keys with TKEN.
+- Added a decision matrix covering base URL support, key handling, team control, budget control, model discovery, and production readiness.
+- Updated README, docs navigation, tool integration notes, promotion copy, and release checks for the comparison asset.
+
 ## v0.14.0
 
 - Added a LiteLLM virtual keys and spend-control guide for teams proxying TKEN through LiteLLM.

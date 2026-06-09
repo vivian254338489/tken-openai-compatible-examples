@@ -2,6 +2,8 @@
 
 Use this guide when you want to point an OpenAI-compatible tool, agent, or UI at TKEN.
 
+If you are still choosing between Cursor, Continue, Open WebUI direct setup, Open WebUI behind LiteLLM, and LiteLLM virtual keys, start with `docs/cursor-continue-openwebui-litellm-comparison.md`.
+
 The common pattern is:
 
 1. Keep the API key server-side or in a local secret store.
@@ -128,6 +130,7 @@ Run these before any tool gets production traffic:
 - Open WebUI guide: https://www.tken.shop/openwebui-openai-compatible-api/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=tool_integration&utm_id=gh_v070
 - LiteLLM guide: https://www.tken.shop/litellm-openai-compatible-gateway/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=tool_integration&utm_id=gh_v070
 - LiteLLM virtual keys: https://www.tken.shop/litellm-openai-compatible-gateway/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v140&utm_content=tool_integration_litellm_virtual_keys&utm_id=gh_v140
+- Tool selection comparison: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v150&utm_content=tool_integration_tool_selection&utm_id=gh_v150
 - Cursor guide: https://www.tken.shop/cursor-openai-compatible-base-url/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=tool_integration&utm_id=gh_v070
 - Continue guide: https://www.tken.shop/continue-openai-compatible-api/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=tool_integration&utm_id=gh_v070
 
