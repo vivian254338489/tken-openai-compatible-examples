@@ -27,6 +27,18 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ## Release Notes
 
 ```text
+v0.17.0 adds an MCP host gateway config review pack for developers connecting MCP-capable hosts or agent apps to TKEN as an OpenAI-compatible model gateway:
+
+- guide that separates MCP server config from model-provider base URL and API-key settings
+- JSON review profile for host owner, model gateway env vars, selected model, MCP servers, permission plan, limits, logging, and rollout gates
+- preflight sequence for /v1/models, one non-streaming chat request, one no-tool host prompt, then one read-only MCP tool
+- failure map for gateway auth/base URL issues, host provider mismatch, MCP server/tool permission problems, runaway agent spend, and secret exposure
+- README, docs navigation, and release checks for MCP-capable host configuration review
+
+Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with OpenAI, Anthropic, MCP hosts, IDE vendors, model providers, or the Model Context Protocol project.
+```
+
+```text
 v0.16.0 adds an endpoint preflight playbook for developers validating TKEN before SDK, UI, proxy, agent, or CI rollout:
 
 - recommended sequence for confirming the base URL includes /v1, running /models only, selecting a returned model ID, and running one non-streaming chat completion

@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.17.0
+
+- Added an MCP host gateway config review guide for separating MCP server settings from OpenAI-compatible model gateway settings.
+- Added a JSON review profile for MCP-capable host rollouts using `TKEN_BASE_URL`, `TKEN_API_KEY`, and a model ID selected from `/v1/models`.
+- Added permission, logging, safe evidence, and rollout checks for MCP hosts before enabling read/write tool calls.
+- Updated README, docs navigation, promotion copy, and release checks for the MCP host config asset.
+
 ## v0.16.0
 
 - Added an endpoint preflight playbook for running `/models` and one non-streaming chat check before SDK, UI, proxy, agent, or CI rollout.

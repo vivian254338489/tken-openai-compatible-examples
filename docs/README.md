@@ -27,6 +27,7 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 | Prepare production rollout, alerts, budgets, and rollback | `docs/production-readiness-checklist.md` |
 | Connect Open WebUI directly to TKEN | `docs/openwebui-direct-tken.md` |
 | Preflight agent and MCP-capable workflows | `docs/agent-mcp-gateway-preflight.md` |
+| Review MCP host config boundaries | `docs/mcp-host-gateway-config.md` |
 | Run Open WebUI through LiteLLM to TKEN | `docs/openwebui-litellm-tken-stack.md` |
 | Issue LiteLLM virtual keys with budgets and rate limits | `docs/litellm-virtual-keys-spend-control.md` |
 | Wire Continue and Cursor-style coding tools | `docs/continue-cursor-coding-tools.md` |
@@ -45,6 +46,7 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 - API pricing guide: https://www.tken.shop/api-pricing-guide/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=docs_index&utm_id=gh_v070
 - Tool integration: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=docs_tool_integration&utm_id=gh_v070
 - Agent and MCP gateway preflight: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v080&utm_content=docs_agent_mcp_preflight&utm_id=gh_v080
+- MCP host gateway config review: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v170&utm_content=docs_mcp_host_gateway_config&utm_id=gh_v170
 - Open WebUI + LiteLLM stack: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v090&utm_content=docs_openwebui_litellm_stack&utm_id=gh_v090
 - Continue and Cursor coding tools: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v100&utm_content=docs_continue_cursor&utm_id=gh_v100
 - CI endpoint smoke tests: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v110&utm_content=docs_ci_smoke&utm_id=gh_v110

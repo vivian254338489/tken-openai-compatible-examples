@@ -34,6 +34,7 @@ Disclosure: TKEN is an independent third-party API gateway. It is not officially
 | Prepare production rollout, alerts, spend limits, and rollback | `docs/production-readiness-checklist.md` |
 | Connect Open WebUI directly to TKEN | `docs/openwebui-direct-tken.md` |
 | Preflight TKEN for agent and MCP-capable workflows | `docs/agent-mcp-gateway-preflight.md` |
+| Review MCP host config boundaries for TKEN | `docs/mcp-host-gateway-config.md` |
 | Run Open WebUI through LiteLLM to TKEN | `docs/openwebui-litellm-tken-stack.md` |
 | Issue LiteLLM virtual keys with budgets and rate limits | `docs/litellm-virtual-keys-spend-control.md` |
 | Wire Continue and Cursor-style coding tools to TKEN | `docs/continue-cursor-coding-tools.md` |
@@ -91,8 +92,9 @@ $env:TKEN_MODEL="replace-with-an-available-model"
 | Codex-style config | `configs/codex.tken.json` |
 | OpenClaw-style config | `configs/openclaw.tken.json` |
 | Agent gateway preflight profile | `configs/agent-gateway-preflight.json` |
+| MCP host gateway review profile | `configs/mcp-host-gateway-review.json` |
 
-For setup notes across these tools, see `docs/tool-integration-guide.md`. If you are choosing between Cursor, Continue, Open WebUI, and LiteLLM, start with `docs/cursor-continue-openwebui-litellm-comparison.md`. For direct Open WebUI setup, see `docs/openwebui-direct-tken.md`. For Open WebUI behind LiteLLM, see `docs/openwebui-litellm-tken-stack.md`. For LiteLLM virtual keys, see `docs/litellm-virtual-keys-spend-control.md`. For coding tools, see `docs/continue-cursor-coding-tools.md`. For agent and MCP-capable host preflight, see `docs/agent-mcp-gateway-preflight.md`.
+For setup notes across these tools, see `docs/tool-integration-guide.md`. If you are choosing between Cursor, Continue, Open WebUI, and LiteLLM, start with `docs/cursor-continue-openwebui-litellm-comparison.md`. For direct Open WebUI setup, see `docs/openwebui-direct-tken.md`. For Open WebUI behind LiteLLM, see `docs/openwebui-litellm-tken-stack.md`. For LiteLLM virtual keys, see `docs/litellm-virtual-keys-spend-control.md`. For coding tools, see `docs/continue-cursor-coding-tools.md`. For agent and MCP-capable host preflight, see `docs/agent-mcp-gateway-preflight.md`. For MCP host config review, see `docs/mcp-host-gateway-config.md`.
 
 For CI checks, see `docs/ci-endpoint-smoke-tests.md`. The included GitHub Actions workflow is manual only, uses the `TKEN_API_KEY` repository secret, and defaults to `/models` reachability before optional chat completion testing.
 

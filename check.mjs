@@ -26,6 +26,7 @@ const required = [
   "configs/openwebui-litellm.env.example",
   "configs/openclaw.tken.json",
   "configs/agent-gateway-preflight.json",
+  "configs/mcp-host-gateway-review.json",
   "configs/production-readiness.template.json",
   ".github/workflows/tken-endpoint-smoke.yml",
   "tools/README.md",
@@ -41,6 +42,7 @@ const required = [
   "docs/production-readiness-checklist.md",
   "docs/openwebui-direct-tken.md",
   "docs/agent-mcp-gateway-preflight.md",
+  "docs/mcp-host-gateway-config.md",
   "docs/openwebui-litellm-tken-stack.md",
   "docs/litellm-virtual-keys-spend-control.md",
   "docs/continue-cursor-coding-tools.md",
@@ -63,6 +65,7 @@ for (const file of [
   "configs/codex.tken.json",
   "configs/openclaw.tken.json",
   "configs/agent-gateway-preflight.json",
+  "configs/mcp-host-gateway-review.json",
   "configs/production-readiness.template.json",
 ]) {
   JSON.parse(fs.readFileSync(file, "utf8"));
