@@ -27,6 +27,19 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ## Release Notes
 
 ```text
+v0.19.0 adds framework integration examples for developers wiring TKEN into Vercel AI SDK and LangChain apps:
+
+- Vercel AI SDK guide using `@ai-sdk/openai-compatible` with the TKEN base URL
+- LangChain guide for JavaScript `@langchain/openai` and Python `langchain-openai`
+- runnable Node.js examples for AI SDK and LangChain JS
+- runnable Python LangChain example
+- rollout guardrails for server-side keys, /v1/models validation, non-streaming first checks, streaming/tool/structured-output follow-up tests, and redacted evidence
+- README, docs navigation, tool integration notes, package scripts, and release checks for framework-level adoption
+
+Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with Vercel, the AI SDK project, LangChain, OpenAI, or other model providers.
+```
+
+```text
 v0.18.0 adds OpenAI SDK capability smoke tests for developers validating optional features before routing production traffic through TKEN:
 
 - Node.js and Python SDK scripts for streaming, JSON-mode responses, and tool-call checks

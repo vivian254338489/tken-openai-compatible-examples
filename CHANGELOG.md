@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.19.0
+
+- Added Vercel AI SDK and LangChain integration guides for using TKEN through OpenAI-compatible base URL settings.
+- Added runnable Node.js examples for `@ai-sdk/openai-compatible` and `@langchain/openai`.
+- Added a runnable Python `langchain-openai` example.
+- Updated README, docs navigation, tool integration notes, promotion copy, package scripts, and release checks for framework-level adoption.
+
 ## v0.18.0
 
 - Added OpenAI SDK capability smoke tests for streaming, JSON-mode responses, and tool calls in Node.js and Python.

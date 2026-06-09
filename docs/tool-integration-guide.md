@@ -14,6 +14,46 @@ The common pattern is:
 
 Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with model providers.
 
+## Vercel AI SDK
+
+Use the OpenAI-compatible provider package from the AI SDK:
+
+```js
+import { generateText } from "ai";
+import { createOpenAICompatible } from "@ai-sdk/openai-compatible";
+
+const tken = createOpenAICompatible({
+  name: "tken",
+  apiKey: process.env.TKEN_API_KEY,
+  baseURL: process.env.TKEN_BASE_URL || "https://www.tken.shop/v1",
+});
+
+const { text } = await generateText({
+  model: tken(process.env.TKEN_MODEL),
+  prompt: "Reply with one short sentence.",
+});
+```
+
+Run one server-side non-streaming request before using streaming UI routes, tools, object generation, or agent loops. See `docs/vercel-ai-sdk-openai-compatible.md` and `examples/vercel-ai-sdk-openai-compatible.mjs`.
+
+## LangChain
+
+Use LangChain's OpenAI chat wrapper with a custom base URL:
+
+```js
+import { ChatOpenAI } from "@langchain/openai";
+
+const chat = new ChatOpenAI({
+  apiKey: process.env.TKEN_API_KEY,
+  model: process.env.TKEN_MODEL,
+  configuration: {
+    baseURL: process.env.TKEN_BASE_URL || "https://www.tken.shop/v1",
+  },
+});
+```
+
+For Python, pass `base_url` to `langchain_openai.ChatOpenAI`. Start with one direct `invoke` call before using chains, retrievers, tools, or agents. See `docs/langchain-openai-compatible.md`, `examples/langchain-js-openai-compatible.mjs`, and `examples/langchain-python-openai-compatible.py`.
+
 ## Open WebUI
 
 Use a server-side environment file or deployment secret:
