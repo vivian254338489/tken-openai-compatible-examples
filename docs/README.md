@@ -10,8 +10,9 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 2. Pick one model ID returned by `/v1/models`.
 3. Run a non-streaming chat completion with the tester.
 4. Switch one OpenAI SDK integration to `https://www.tken.shop/v1`.
-5. Add timeouts, retries, token caps, logging, and budget limits.
-6. Test streaming, tool calls, JSON output, and embeddings only if your app uses them.
+5. Run `docs/openai-sdk-capability-smoke.md` for streaming, JSON mode, and tool calls only if your app uses those features.
+6. Add timeouts, retries, token caps, logging, and budget limits.
+7. Test embeddings, vision, and other feature-specific routes separately if your app uses them.
 
 ## Guides
 
@@ -19,6 +20,7 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 | --- | --- |
 | Evaluate an API gateway before adoption | `docs/api-gateway-evaluation.md` |
 | Move an existing SDK app | `docs/sdk-migration-guide.md` |
+| Smoke-test SDK streaming, JSON mode, and tool calls | `docs/openai-sdk-capability-smoke.md` |
 | Run endpoint preflight and interpret tester output | `docs/endpoint-preflight-playbook.md` |
 | Check endpoint behavior before launch | `docs/compatibility-checklist.md` |
 | Debug setup errors | `docs/troubleshooting.md` |

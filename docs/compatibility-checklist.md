@@ -19,10 +19,10 @@ Run these only when your app uses the feature.
 
 | Feature | What To Verify |
 | --- | --- |
-| Streaming | Server-sent events format, partial chunks, timeout handling |
-| JSON output | Whether the selected model follows strict JSON instructions |
+| Streaming | Server-sent events format, partial chunks, timeout handling; see `docs/openai-sdk-capability-smoke.md` |
+| JSON output | Whether the selected model follows strict JSON instructions; see `docs/openai-sdk-capability-smoke.md` |
 | Structured output | Schema support and fallback behavior |
-| Tool calls | Tool-call shape, argument JSON, and model support |
+| Tool calls | Tool-call shape, argument JSON, and model support; see `docs/openai-sdk-capability-smoke.md` |
 | Embeddings | Vector size, model ID, batching limit, and error behavior |
 | Vision or multimodal | Media payload format, size limits, and model support |
 | Retries and fallbacks | Backoff, idempotency, and failure routing |

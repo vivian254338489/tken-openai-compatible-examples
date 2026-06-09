@@ -26,6 +26,7 @@ Disclosure: TKEN is an independent third-party API gateway. It is not officially
 | --- | --- |
 | Evaluate an OpenAI-compatible gateway before adoption | `docs/api-gateway-evaluation.md` |
 | Move an existing SDK app to a custom base URL | `docs/sdk-migration-guide.md` |
+| Smoke-test SDK streaming, JSON mode, and tool calls | `docs/openai-sdk-capability-smoke.md` |
 | Run endpoint preflight and interpret tester output | `docs/endpoint-preflight-playbook.md` |
 | Check endpoint behavior before launch | `docs/compatibility-checklist.md` |
 | Debug 401, 404, model, quota, timeout, and CORS errors | `docs/troubleshooting.md` |
@@ -70,8 +71,10 @@ $env:TKEN_MODEL="replace-with-an-available-model"
 | curl quickstart with `/models` check | `examples/curl-quickstart.sh` |
 | Node.js no-dependency chat completion | `examples/node-chat.mjs` |
 | Node.js OpenAI SDK chat completion | `examples/node-openai-sdk.mjs` |
+| Node.js OpenAI SDK streaming, JSON, and tool smoke tests | `examples/node-openai-sdk-capability-smoke.mjs` |
 | Python no-dependency chat completion | `examples/python-chat.py` |
 | Python OpenAI SDK chat completion | `examples/python-openai-sdk.py` |
+| Python OpenAI SDK streaming, JSON, and tool smoke tests | `examples/python-openai-sdk-capability-smoke.py` |
 | Node.js `/models` and chat smoke test | `examples/smoke-test.mjs` |
 | Cost-aware route-level model selection | `examples/model-router.mjs` |
 | Reusable OpenAI-compatible endpoint tester | `tools/endpoint-tester.mjs` |
@@ -165,6 +168,26 @@ Run:
 ```bash
 python examples/python-openai-sdk.py
 ```
+
+## SDK Capability Smoke Tests
+
+After `/models` and non-streaming chat pass, verify optional SDK features one at a time:
+
+```bash
+node examples/node-openai-sdk-capability-smoke.mjs stream
+node examples/node-openai-sdk-capability-smoke.mjs json
+node examples/node-openai-sdk-capability-smoke.mjs tools
+```
+
+Python:
+
+```bash
+python examples/python-openai-sdk-capability-smoke.py stream
+python examples/python-openai-sdk-capability-smoke.py json
+python examples/python-openai-sdk-capability-smoke.py tools
+```
+
+See `docs/openai-sdk-capability-smoke.md` before enabling streaming, JSON parsers, or tool-call dependent agents in production.
 
 ## Model Routing Pattern
 

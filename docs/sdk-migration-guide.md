@@ -74,6 +74,7 @@ Full example: `examples/python-openai-sdk.py`.
 ## 5. Roll Out Safely
 
 - Start with non-streaming chat completions.
+- Run `docs/openai-sdk-capability-smoke.md` before enabling streaming, JSON-mode parsers, or tool-call dependent agents.
 - Log request IDs, model IDs, HTTP status, latency, and token usage when available.
 - Add timeouts before using agentic tools or batch jobs.
 - Add retry limits and backoff for transient 429 or 5xx responses.

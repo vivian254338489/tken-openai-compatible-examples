@@ -27,6 +27,18 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ## Release Notes
 
 ```text
+v0.18.0 adds OpenAI SDK capability smoke tests for developers validating optional features before routing production traffic through TKEN:
+
+- Node.js and Python SDK scripts for streaming, JSON-mode responses, and tool-call checks
+- guide for running one capability mode at a time after /v1/models and non-streaming chat pass
+- decision table for when basic chat works but streaming, JSON parsing, or tool calls fail for a selected model route
+- safe evidence template that avoids exposing keys, account IDs, private prompts, usage records, or provider dashboards
+- README, docs navigation, compatibility notes, migration notes, and release checks for SDK feature rollout
+
+Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with OpenAI or other model providers. Feature behavior can vary by selected model, provider route, account limits, and provider status.
+```
+
+```text
 v0.17.0 adds an MCP host gateway config review pack for developers connecting MCP-capable hosts or agent apps to TKEN as an OpenAI-compatible model gateway:
 
 - guide that separates MCP server config from model-provider base URL and API-key settings

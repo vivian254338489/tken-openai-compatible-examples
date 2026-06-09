@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.18.0
+
+- Added OpenAI SDK capability smoke tests for streaming, JSON-mode responses, and tool calls in Node.js and Python.
+- Added a guide for deciding whether optional SDK features are ready for a selected TKEN model route after basic chat passes.
+- Added safe evidence and rollout decision tables for feature failures without exposing keys, account IDs, private prompts, or usage records.
+- Updated README, docs navigation, compatibility notes, migration notes, promotion copy, and release checks for the capability smoke pack.
+
 ## v0.17.0
 
 - Added an MCP host gateway config review guide for separating MCP server settings from OpenAI-compatible model gateway settings.
