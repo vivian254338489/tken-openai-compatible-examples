@@ -43,6 +43,8 @@ node tools/endpoint-tester.mjs `
 
 For a rollout-ready sequence, start with `../docs/endpoint-preflight-playbook.md`.
 
+For no-code imports, use `../docs/api-client-collections.md` with the Postman or Bruno collections under `../collections/`.
+
 Recommended order:
 
 1. Confirm the base URL ends in `/v1`.

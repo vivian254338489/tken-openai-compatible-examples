@@ -28,6 +28,17 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ## Release Notes
 
 ```text
+v0.22.0 adds importable API-client smoke-test collections for developers validating TKEN before SDK, UI, proxy, or agent integration:
+
+- Postman collection and local environment for GET /models and POST /chat/completions
+- Bruno collection with local .bru files and TKEN_API_KEY environment-variable handling
+- guide for variables, import flow, safe redacted evidence, and common endpoint failures
+- README, docs navigation, tool integration notes, tools documentation, package metadata, and release checks for no-code endpoint validation
+
+Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with Postman, Bruno, OpenAI, or other model providers.
+```
+
+```text
 v0.21.0 adds a Docker Compose pack for developers starting Open WebUI and LiteLLM together while routing LiteLLM to TKEN:
 
 - Compose stack for Open WebUI -> LiteLLM -> TKEN

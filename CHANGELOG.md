@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.22.0
+
+- Added Postman and Bruno importable smoke-test collections for `/v1/models` and one non-streaming `/v1/chat/completions` check.
+- Added a guide for API-client variables, safe key handling, import flow, redacted evidence, and common endpoint failures.
+- Updated README, docs navigation, tool integration notes, tools documentation, package metadata, and release checks for no-code endpoint validation.
+
 ## v0.21.0
 
 - Added a Docker Compose guide for starting Open WebUI and LiteLLM together while routing LiteLLM to TKEN.

@@ -14,6 +14,16 @@ The common pattern is:
 
 Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with model providers.
 
+## API Client Collections
+
+If you want to validate the endpoint before writing code, import the Postman or Bruno collections from `collections/`:
+
+- Postman: `collections/postman/tken-openai-compatible-smoke.postman_collection.json`
+- Postman environment: `collections/postman/tken-local.postman_environment.json`
+- Bruno: `collections/bruno/tken-openai-compatible-smoke/`
+
+Run `/models` first, then use a returned model ID for one non-streaming `/chat/completions` request. Keep real keys in local environment variables or client secrets, not in source control. See `docs/api-client-collections.md`.
+
 ## Vercel AI SDK
 
 Use the OpenAI-compatible provider package from the AI SDK:
@@ -193,6 +203,7 @@ Run these before any tool gets production traffic:
 - Open WebUI guide: https://www.tken.shop/openwebui-openai-compatible-api/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=tool_integration&utm_id=gh_v070
 - LiteLLM guide: https://www.tken.shop/litellm-openai-compatible-gateway/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=tool_integration&utm_id=gh_v070
 - LiteLLM virtual keys: https://www.tken.shop/litellm-openai-compatible-gateway/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v140&utm_content=tool_integration_litellm_virtual_keys&utm_id=gh_v140
+- Postman and Bruno collections: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v220&utm_content=tool_integration_api_client_collections&utm_id=gh_v220
 - Open WebUI + LiteLLM Docker Compose: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v210&utm_content=tool_integration_openwebui_litellm_compose&utm_id=gh_v210
 - Tool selection comparison: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v150&utm_content=tool_integration_tool_selection&utm_id=gh_v150
 - Cursor guide: https://www.tken.shop/cursor-openai-compatible-base-url/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=tool_integration&utm_id=gh_v070

@@ -21,6 +21,13 @@ const required = [
   "examples/smoke-test.mjs",
   "examples/model-router.mjs",
   "examples/web-ui-config.js",
+  "collections/postman/tken-openai-compatible-smoke.postman_collection.json",
+  "collections/postman/tken-local.postman_environment.json",
+  "collections/bruno/tken-openai-compatible-smoke/bruno.json",
+  "collections/bruno/tken-openai-compatible-smoke/collection.bru",
+  "collections/bruno/tken-openai-compatible-smoke/environments/local.bru",
+  "collections/bruno/tken-openai-compatible-smoke/01-get-models.bru",
+  "collections/bruno/tken-openai-compatible-smoke/02-chat-completions.bru",
   "configs/codex.tken.json",
   "configs/cursor-continue-config.md",
   "configs/continue-tken.config.yaml",
@@ -46,6 +53,7 @@ const required = [
   "docs/vercel-ai-sdk-openai-compatible.md",
   "docs/langchain-openai-compatible.md",
   "docs/llamaindex-openai-compatible.md",
+  "docs/api-client-collections.md",
   "docs/endpoint-preflight-playbook.md",
   "docs/compatibility-checklist.md",
   "docs/troubleshooting.md",
@@ -81,6 +89,8 @@ for (const file of [
   "configs/agent-gateway-preflight.json",
   "configs/mcp-host-gateway-review.json",
   "configs/production-readiness.template.json",
+  "collections/postman/tken-openai-compatible-smoke.postman_collection.json",
+  "collections/postman/tken-local.postman_environment.json",
 ]) {
   JSON.parse(fs.readFileSync(file, "utf8"));
 }

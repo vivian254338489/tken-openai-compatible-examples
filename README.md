@@ -30,6 +30,7 @@ Disclosure: TKEN is an independent third-party API gateway. It is not officially
 | Use Vercel AI SDK with an OpenAI-compatible provider | `docs/vercel-ai-sdk-openai-compatible.md` |
 | Use LangChain with an OpenAI-compatible chat model | `docs/langchain-openai-compatible.md` |
 | Use LlamaIndex with an OpenAI-compatible LLM route | `docs/llamaindex-openai-compatible.md` |
+| Import Postman or Bruno endpoint smoke tests | `docs/api-client-collections.md` |
 | Run endpoint preflight and interpret tester output | `docs/endpoint-preflight-playbook.md` |
 | Check endpoint behavior before launch | `docs/compatibility-checklist.md` |
 | Debug 401, 404, model, quota, timeout, and CORS errors | `docs/troubleshooting.md` |
@@ -89,6 +90,17 @@ $env:TKEN_MODEL="replace-with-an-available-model"
 | Manual GitHub Actions endpoint smoke test | `.github/workflows/tken-endpoint-smoke.yml` |
 | Browser/Web UI config | `examples/web-ui-config.js` |
 
+## API Client Collections
+
+Use these when you want a no-code endpoint check before wiring an SDK, UI, proxy, or agent:
+
+| Client | File |
+| --- | --- |
+| Postman | `collections/postman/tken-openai-compatible-smoke.postman_collection.json`, `collections/postman/tken-local.postman_environment.json` |
+| Bruno | `collections/bruno/tken-openai-compatible-smoke/` |
+
+Run `GET /models` first, then choose a returned model ID before running `POST /chat/completions`. See `docs/api-client-collections.md` for import flow, variables, and safe evidence guidance.
+
 ## Tool Configs
 
 | Tool | File |
@@ -108,7 +120,7 @@ $env:TKEN_MODEL="replace-with-an-available-model"
 
 For setup notes across these tools, see `docs/tool-integration-guide.md`. If you are choosing between Cursor, Continue, Open WebUI, and LiteLLM, start with `docs/cursor-continue-openwebui-litellm-comparison.md`. For direct Open WebUI setup, see `docs/openwebui-direct-tken.md`. For Open WebUI behind LiteLLM, see `docs/openwebui-litellm-tken-stack.md`; for a runnable local container stack, use `docs/openwebui-litellm-docker-compose.md`. For LiteLLM virtual keys, see `docs/litellm-virtual-keys-spend-control.md`. For coding tools, see `docs/continue-cursor-coding-tools.md`. For agent and MCP-capable host preflight, see `docs/agent-mcp-gateway-preflight.md`. For MCP host config review, see `docs/mcp-host-gateway-config.md`.
 
-For framework integrations, start with `docs/vercel-ai-sdk-openai-compatible.md` for Vercel AI SDK apps, `docs/langchain-openai-compatible.md` for LangChain chains or agents, and `docs/llamaindex-openai-compatible.md` for LlamaIndex query engines or agents. Validate `/v1/models` and one non-streaming chat request before enabling streaming, tools, structured output, embeddings, query engines, or agent loops.
+For framework integrations, start with `docs/vercel-ai-sdk-openai-compatible.md` for Vercel AI SDK apps, `docs/langchain-openai-compatible.md` for LangChain chains or agents, and `docs/llamaindex-openai-compatible.md` for LlamaIndex query engines or agents. If you prefer API-client imports before code, start with `docs/api-client-collections.md`. Validate `/v1/models` and one non-streaming chat request before enabling streaming, tools, structured output, embeddings, query engines, or agent loops.
 
 For CI checks, see `docs/ci-endpoint-smoke-tests.md`. The included GitHub Actions workflow is manual only, uses the `TKEN_API_KEY` repository secret, and defaults to `/models` reachability before optional chat completion testing.
 

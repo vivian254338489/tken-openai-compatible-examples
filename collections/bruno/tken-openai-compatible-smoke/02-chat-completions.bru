@@ -1,0 +1,43 @@
+meta {
+  name: 02 POST chat completions
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{tken_base_url}}/chat/completions
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{tken_api_key}}
+}
+
+headers {
+  content-type: application/json
+  accept: application/json
+}
+
+body:json {
+  {
+    "model": "{{tken_model}}",
+    "messages": [
+      {
+        "role": "user",
+        "content": "{{tken_prompt}}"
+      }
+    ]
+  }
+}
+
+tests {
+  test("status is 200", function() {
+    expect(res.status).to.equal(200);
+  });
+
+  test("response has at least one choice", function() {
+    expect(res.body).to.have.property("choices");
+    expect(res.body.choices).to.be.an("array").that.is.not.empty;
+  });
+}
