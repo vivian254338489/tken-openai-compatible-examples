@@ -34,6 +34,7 @@ Add LiteLLM in the middle when you need:
 | Purpose | File |
 | --- | --- |
 | LiteLLM route config for TKEN | `configs/litellm-openwebui-tken.yaml` |
+| LiteLLM virtual key and budget config | `configs/litellm-virtual-keys-tken.yaml` |
 | Open WebUI environment example for calling LiteLLM | `configs/openwebui-litellm.env.example` |
 | Generic LiteLLM config | `configs/litellm-config.yaml` |
 | Direct Open WebUI config | `configs/openwebui.env.example` |
@@ -78,6 +79,8 @@ Use the `openai/` prefix so LiteLLM treats the upstream as an OpenAI-compatible 
 ## Step 2: Start LiteLLM
 
 Use `configs/litellm-openwebui-tken.yaml` as the starting config.
+
+If you need managed virtual keys, key-level budgets, or default key-generation limits, use `docs/litellm-virtual-keys-spend-control.md` and `configs/litellm-virtual-keys-tken.yaml` instead of the minimal route-only config.
 
 ```bash
 export LITELLM_MASTER_KEY="replace-with-a-local-master-key"

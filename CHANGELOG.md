@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.14.0
+
+- Added a LiteLLM virtual keys and spend-control guide for teams proxying TKEN through LiteLLM.
+- Added a LiteLLM key-management config template with Postgres, per-key budget defaults, rate limits, and key-generation upper bounds.
+- Updated README, docs navigation, cost guardrails, tool integration notes, and promotion copy for shared team rollout evaluation.
+
 ## v0.13.0
 
 - Added a direct Open WebUI to TKEN setup guide for developers configuring an OpenAI-compatible base URL without an intermediate proxy.

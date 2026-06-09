@@ -27,6 +27,18 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ## Release Notes
 
 ```text
+v0.14.0 adds a LiteLLM virtual key spend-control pack for teams routing Open WebUI, internal tools, or agents to TKEN through a managed proxy:
+
+- guide for the flow apps/Open WebUI/internal tools -> LiteLLM virtual key -> TKEN OpenAI-compatible base URL
+- config template for Postgres-backed LiteLLM key management, `default_key_generate_params`, and `upperbound_key_generate_params`
+- virtual-key preflight for /v1/models, one non-streaming chat completion, /key/generate, and /key/info spend checks
+- rollout checklist for upstream-key isolation, per-key budgets, RPM/TPM limits, key duration, owner metadata, and redacted logs
+- README, docs navigation, cost guardrails, and tool integration updates for shared team evaluation
+
+Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with LiteLLM, OpenAI, Open WebUI, or other model providers.
+```
+
+```text
 v0.13.0 adds a direct Open WebUI setup pack for developers connecting a chat UI to TKEN as an OpenAI-compatible API gateway:
 
 - step-by-step Open WebUI Admin Settings path for adding the TKEN base URL and API key

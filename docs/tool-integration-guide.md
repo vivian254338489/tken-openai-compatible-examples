@@ -51,6 +51,8 @@ general_settings:
 
 Run a low-volume test route first. Add LiteLLM budget, retry, and logging settings before connecting shared team traffic.
 
+For shared teams, use LiteLLM virtual keys instead of sharing the upstream TKEN key. Start from `docs/litellm-virtual-keys-spend-control.md` and `configs/litellm-virtual-keys-tken.yaml` to add Postgres-backed key management, per-key budgets, rate limits, default key settings, and key-generation upper bounds.
+
 ## Cursor
 
 Cursor's public API key documentation currently focuses on supported provider API keys. It notes that custom API keys work for standard chat models and that specialized features such as Tab Completion continue using Cursor's built-in models.
@@ -125,6 +127,7 @@ Run these before any tool gets production traffic:
 - Developer hub: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=tool_integration&utm_id=gh_v070
 - Open WebUI guide: https://www.tken.shop/openwebui-openai-compatible-api/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=tool_integration&utm_id=gh_v070
 - LiteLLM guide: https://www.tken.shop/litellm-openai-compatible-gateway/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=tool_integration&utm_id=gh_v070
+- LiteLLM virtual keys: https://www.tken.shop/litellm-openai-compatible-gateway/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v140&utm_content=tool_integration_litellm_virtual_keys&utm_id=gh_v140
 - Cursor guide: https://www.tken.shop/cursor-openai-compatible-base-url/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=tool_integration&utm_id=gh_v070
 - Continue guide: https://www.tken.shop/continue-openai-compatible-api/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=tool_integration&utm_id=gh_v070
 

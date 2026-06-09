@@ -1,0 +1,36 @@
+model_list:
+  - model_name: tken-chat
+    litellm_params:
+      model: openai/replace-with-an-available-model
+      api_key: os.environ/TKEN_API_KEY
+      api_base: https://www.tken.shop/v1
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY
+
+litellm_settings:
+  # Global proxy guardrail for evaluation traffic. Tune this before production.
+  max_budget: 100.0
+  budget_duration: "30d"
+
+  # Defaults applied when /key/generate omits these fields.
+  default_key_generate_params:
+    models: ["tken-chat"]
+    max_budget: 5.0
+    budget_duration: "30d"
+    duration: "30d"
+    rpm_limit: 60
+    tpm_limit: 60000
+    max_parallel_requests: 5
+    metadata:
+      source: "tken-github-example"
+      environment: "evaluation"
+
+  # Upper bounds prevent accidental over-sized virtual keys.
+  upperbound_key_generate_params:
+    max_budget: 25.0
+    budget_duration: "30d"
+    duration: "90d"
+    rpm_limit: 120
+    tpm_limit: 120000
+    max_parallel_requests: 10

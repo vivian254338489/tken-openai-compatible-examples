@@ -4,6 +4,8 @@ Use these guardrails before connecting automated agents, batch jobs, or user-fac
 
 For a complete rollout gate with alerts, rollback, and a versioned JSON template, see `docs/production-readiness-checklist.md` and `configs/production-readiness.template.json`.
 
+For shared LiteLLM proxy deployments, see `docs/litellm-virtual-keys-spend-control.md` and `configs/litellm-virtual-keys-tken.yaml` for virtual keys, per-key budgets, rate limits, and default key-generation limits.
+
 ## Route By Task Class
 
 Create route names in your app instead of hard-coding provider model IDs everywhere.
@@ -57,5 +59,6 @@ Use hashes or internal IDs instead of storing private user content.
 - Pricing: https://www.tken.shop/pricing/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=cost_guardrails&utm_id=gh_v070
 - Pricing guide: https://www.tken.shop/api-pricing-guide/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=cost_guardrails&utm_id=gh_v070
 - Production readiness: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v120&utm_content=cost_guardrails_production_readiness&utm_id=gh_v120
+- LiteLLM virtual keys: https://www.tken.shop/litellm-openai-compatible-gateway/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v140&utm_content=cost_guardrails_litellm_virtual_keys&utm_id=gh_v140
 
 Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with model providers.
