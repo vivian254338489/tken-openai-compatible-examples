@@ -28,6 +28,18 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ## Release Notes
 
 ```text
+v0.23.0 adds a smoke evidence runner for developers who need safe, paste-ready endpoint validation artifacts before filing issues or rollout notes:
+
+- no-dependency CLI for Markdown or JSON evidence after GET /models and optional non-streaming POST /chat/completions
+- redacted status, latency, model discovery, selected model, failure class, and response-shape evidence
+- no API keys, bearer tokens, private prompt text, full response text, or provider account data stored in evidence output
+- guide for issue reports, release checklists, team handoffs, and rollout records
+- README, docs navigation, tools documentation, package metadata, and release checks for redacted evidence capture
+
+Disclosure: TKEN is an independent third-party OpenAI-compatible API gateway and is not officially affiliated with OpenAI or other model providers.
+```
+
+```text
 v0.22.0 adds importable API-client smoke-test collections for developers validating TKEN before SDK, UI, proxy, or agent integration:
 
 - Postman collection and local environment for GET /models and POST /chat/completions

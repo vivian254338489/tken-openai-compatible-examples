@@ -1,6 +1,8 @@
 # OpenAI-Compatible Endpoint Tester
 
-Use this CLI to validate an OpenAI-compatible base URL before wiring it into an SDK, agent, proxy, or UI.
+Use these CLIs to validate an OpenAI-compatible base URL before wiring it into an SDK, agent, proxy, or UI.
+
+## Endpoint Tester
 
 ```bash
 export TKEN_API_KEY="sk-your-tken-key"
@@ -66,3 +68,31 @@ Recommended order:
 For a manual CI smoke test, see `../docs/ci-endpoint-smoke-tests.md` and `../.github/workflows/tken-endpoint-smoke.yml`.
 
 The workflow is triggered with `workflow_dispatch`, reads `TKEN_API_KEY` from repository secrets, and defaults to a `/models`-only check unless `run_chat` is enabled.
+
+## Smoke Evidence Runner
+
+Use `smoke-evidence.mjs` when you need a redacted Markdown or JSON artifact for an issue, rollout note, release checklist, or team handoff.
+
+```bash
+node tools/smoke-evidence.mjs \
+  --base-url "$TKEN_BASE_URL" \
+  --api-key-env TKEN_API_KEY \
+  --model "$TKEN_MODEL" \
+  --out smoke-evidence.md
+```
+
+JSON:
+
+```bash
+node tools/smoke-evidence.mjs --format json --out smoke-evidence.json
+```
+
+Offline sample without an API key:
+
+```bash
+node tools/smoke-evidence.mjs --sample --json
+```
+
+The runner records status, latency, model discovery, selected model, failure class, and shape-level chat evidence. It does not store API keys, bearer tokens, private prompt text, or full response text.
+
+For fields and redaction rules, see `../docs/smoke-evidence-runner.md`.

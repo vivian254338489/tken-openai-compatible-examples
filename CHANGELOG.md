@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.23.0
+
+- Added a no-dependency smoke evidence runner for Markdown or JSON endpoint evidence after `/models` and optional non-streaming chat checks.
+- Added redaction rules for API keys, bearer tokens, private prompt text, full response text, long IDs, and opaque identifiers in failure previews.
+- Added a guide for issue, rollout, release, and team-handoff evidence workflows.
+- Updated README, docs navigation, tools documentation, package metadata, and release checks for redacted evidence capture.
+
 ## v0.22.0
 
 - Added Postman and Bruno importable smoke-test collections for `/v1/models` and one non-streaming `/v1/chat/completions` check.

@@ -9,12 +9,13 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 1. Follow `docs/endpoint-preflight-playbook.md` and run `node tools/endpoint-tester.mjs --skip-chat` to confirm `/v1/models`.
 2. Pick one model ID returned by `/v1/models`.
 3. Run a non-streaming chat completion with the tester.
-4. Switch one OpenAI SDK integration to `https://www.tken.shop/v1`.
-5. If you prefer API-client imports before code, use `docs/api-client-collections.md`.
-6. If your app uses Vercel AI SDK, LangChain, or LlamaIndex, wire one direct non-streaming call before chains, query engines, tools, or agents.
-7. Run `docs/openai-sdk-capability-smoke.md` for streaming, JSON mode, and tool calls only if your app uses those features.
-8. Add timeouts, retries, token caps, logging, and budget limits.
-9. Test embeddings, vision, and other feature-specific routes separately if your app uses them.
+4. Save redacted status and latency evidence with `docs/smoke-evidence-runner.md`.
+5. Switch one OpenAI SDK integration to `https://www.tken.shop/v1`.
+6. If you prefer API-client imports before code, use `docs/api-client-collections.md`.
+7. If your app uses Vercel AI SDK, LangChain, or LlamaIndex, wire one direct non-streaming call before chains, query engines, tools, or agents.
+8. Run `docs/openai-sdk-capability-smoke.md` for streaming, JSON mode, and tool calls only if your app uses those features.
+9. Add timeouts, retries, token caps, logging, and budget limits.
+10. Test embeddings, vision, and other feature-specific routes separately if your app uses them.
 
 ## Guides
 
@@ -27,6 +28,7 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 | Use LangChain with TKEN | `docs/langchain-openai-compatible.md` |
 | Use LlamaIndex with TKEN | `docs/llamaindex-openai-compatible.md` |
 | Import Postman or Bruno smoke tests | `docs/api-client-collections.md` |
+| Capture redacted endpoint evidence | `docs/smoke-evidence-runner.md` |
 | Run endpoint preflight and interpret tester output | `docs/endpoint-preflight-playbook.md` |
 | Check endpoint behavior before launch | `docs/compatibility-checklist.md` |
 | Debug setup errors | `docs/troubleshooting.md` |
@@ -60,6 +62,7 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 - LangChain integration: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v190&utm_content=docs_langchain&utm_id=gh_v190
 - LlamaIndex integration: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v200&utm_content=docs_llamaindex&utm_id=gh_v200
 - Postman and Bruno smoke-test collections: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v220&utm_content=docs_api_client_collections&utm_id=gh_v220
+- Smoke evidence runner: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v230&utm_content=docs_smoke_evidence_runner&utm_id=gh_v230
 - Open WebUI + LiteLLM Docker Compose: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v210&utm_content=docs_openwebui_litellm_compose&utm_id=gh_v210
 - Open WebUI + LiteLLM stack: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v090&utm_content=docs_openwebui_litellm_stack&utm_id=gh_v090
 - Continue and Cursor coding tools: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v100&utm_content=docs_continue_cursor&utm_id=gh_v100

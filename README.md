@@ -31,6 +31,7 @@ Disclosure: TKEN is an independent third-party API gateway. It is not officially
 | Use LangChain with an OpenAI-compatible chat model | `docs/langchain-openai-compatible.md` |
 | Use LlamaIndex with an OpenAI-compatible LLM route | `docs/llamaindex-openai-compatible.md` |
 | Import Postman or Bruno endpoint smoke tests | `docs/api-client-collections.md` |
+| Capture redacted smoke-test evidence | `docs/smoke-evidence-runner.md` |
 | Run endpoint preflight and interpret tester output | `docs/endpoint-preflight-playbook.md` |
 | Check endpoint behavior before launch | `docs/compatibility-checklist.md` |
 | Debug 401, 404, model, quota, timeout, and CORS errors | `docs/troubleshooting.md` |
@@ -87,6 +88,7 @@ $env:TKEN_MODEL="replace-with-an-available-model"
 | Node.js `/models` and chat smoke test | `examples/smoke-test.mjs` |
 | Cost-aware route-level model selection | `examples/model-router.mjs` |
 | Reusable OpenAI-compatible endpoint tester | `tools/endpoint-tester.mjs` |
+| Redacted smoke evidence runner | `tools/smoke-evidence.mjs` |
 | Manual GitHub Actions endpoint smoke test | `.github/workflows/tken-endpoint-smoke.yml` |
 | Browser/Web UI config | `examples/web-ui-config.js` |
 
@@ -100,6 +102,22 @@ Use these when you want a no-code endpoint check before wiring an SDK, UI, proxy
 | Bruno | `collections/bruno/tken-openai-compatible-smoke/` |
 
 Run `GET /models` first, then choose a returned model ID before running `POST /chat/completions`. See `docs/api-client-collections.md` for import flow, variables, and safe evidence guidance.
+
+## Smoke Evidence Runner
+
+When you need a paste-ready issue, rollout, or handoff artifact, run the evidence CLI:
+
+```bash
+node tools/smoke-evidence.mjs \
+  --base-url "$TKEN_BASE_URL" \
+  --api-key-env TKEN_API_KEY \
+  --model "$TKEN_MODEL" \
+  --out smoke-evidence.md
+```
+
+It records status, latency, model discovery, selected model, failure class, and shape-level chat evidence without storing API keys, prompt text, or full response text.
+
+For output fields, JSON mode, and redaction rules, see `docs/smoke-evidence-runner.md`.
 
 ## Tool Configs
 

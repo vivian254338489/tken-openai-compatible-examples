@@ -1,6 +1,6 @@
 {
   "name": "tken-openai-compatible-examples",
-  "version": "0.22.0",
+  "version": "0.23.0",
   "private": false,
   "type": "module",
   "scripts": {
@@ -14,6 +14,7 @@
     "python:llamaindex": "python examples/llamaindex-openai-compatible.py",
     "node:router": "node examples/model-router.mjs",
     "smoke": "node examples/smoke-test.mjs",
-    "test:endpoint": "node tools/endpoint-tester.mjs"
+    "test:endpoint": "node tools/endpoint-tester.mjs",
+    "smoke:evidence": "node tools/smoke-evidence.mjs"
   }
 }
