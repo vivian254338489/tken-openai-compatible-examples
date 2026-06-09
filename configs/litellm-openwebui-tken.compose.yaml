@@ -1,0 +1,13 @@
+model_list:
+  - model_name: tken-chat
+    litellm_params:
+      model: os.environ/TKEN_LITELLM_MODEL
+      api_key: os.environ/TKEN_API_KEY
+      api_base: https://www.tken.shop/v1
+
+litellm_settings:
+  request_timeout: 60
+  num_retries: 1
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY

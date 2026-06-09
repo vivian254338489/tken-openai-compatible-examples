@@ -35,6 +35,7 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 | Preflight agent and MCP-capable workflows | `docs/agent-mcp-gateway-preflight.md` |
 | Review MCP host config boundaries | `docs/mcp-host-gateway-config.md` |
 | Run Open WebUI through LiteLLM to TKEN | `docs/openwebui-litellm-tken-stack.md` |
+| Start Open WebUI and LiteLLM with Docker Compose | `docs/openwebui-litellm-docker-compose.md` |
 | Issue LiteLLM virtual keys with budgets and rate limits | `docs/litellm-virtual-keys-spend-control.md` |
 | Wire Continue and Cursor-style coding tools | `docs/continue-cursor-coding-tools.md` |
 | Choose between Cursor, Continue, Open WebUI, and LiteLLM | `docs/cursor-continue-openwebui-litellm-comparison.md` |
@@ -56,6 +57,7 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 - Vercel AI SDK integration: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v190&utm_content=docs_vercel_ai_sdk&utm_id=gh_v190
 - LangChain integration: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v190&utm_content=docs_langchain&utm_id=gh_v190
 - LlamaIndex integration: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v200&utm_content=docs_llamaindex&utm_id=gh_v200
+- Open WebUI + LiteLLM Docker Compose: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v210&utm_content=docs_openwebui_litellm_compose&utm_id=gh_v210
 - Open WebUI + LiteLLM stack: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v090&utm_content=docs_openwebui_litellm_stack&utm_id=gh_v090
 - Continue and Cursor coding tools: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v100&utm_content=docs_continue_cursor&utm_id=gh_v100
 - CI endpoint smoke tests: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v110&utm_content=docs_ci_smoke&utm_id=gh_v110

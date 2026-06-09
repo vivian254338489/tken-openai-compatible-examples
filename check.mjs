@@ -26,10 +26,12 @@ const required = [
   "configs/continue-tken.config.yaml",
   "configs/litellm-config.yaml",
   "configs/litellm-openwebui-tken.yaml",
+  "configs/litellm-openwebui-tken.compose.yaml",
   "configs/litellm-virtual-keys-tken.yaml",
   "configs/openwebui-direct-tken.env.example",
   "configs/openwebui.env.example",
   "configs/openwebui-litellm.env.example",
+  "configs/openwebui-litellm-docker-compose.env.example",
   "configs/openclaw.tken.json",
   "configs/agent-gateway-preflight.json",
   "configs/mcp-host-gateway-review.json",
@@ -54,6 +56,7 @@ const required = [
   "docs/agent-mcp-gateway-preflight.md",
   "docs/mcp-host-gateway-config.md",
   "docs/openwebui-litellm-tken-stack.md",
+  "docs/openwebui-litellm-docker-compose.md",
   "docs/litellm-virtual-keys-spend-control.md",
   "docs/continue-cursor-coding-tools.md",
   "docs/cursor-continue-openwebui-litellm-comparison.md",
@@ -63,6 +66,7 @@ const required = [
   "docs/community-disclosure.md",
   ".github/ISSUE_TEMPLATE/bug-report.md",
   ".github/ISSUE_TEMPLATE/compatibility-question.md",
+  "docker-compose.openwebui-litellm-tken.yml",
 ];
 
 const missing = required.filter((file) => !fs.existsSync(file));

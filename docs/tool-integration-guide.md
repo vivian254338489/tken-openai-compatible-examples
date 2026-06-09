@@ -94,6 +94,8 @@ Then set the default model to an ID returned by `/v1/models`.
 
 For the focused direct setup flow, including the Admin Settings path, Docker notes, default model guidance, and passthrough warning, see `docs/openwebui-direct-tken.md`.
 
+For a local container stack where Open WebUI calls LiteLLM over a Docker network and LiteLLM holds the upstream TKEN key, see `docs/openwebui-litellm-docker-compose.md`.
+
 ## LiteLLM
 
 Example config:
@@ -113,6 +115,8 @@ general_settings:
 Run a low-volume test route first. Add LiteLLM budget, retry, and logging settings before connecting shared team traffic.
 
 For shared teams, use LiteLLM virtual keys instead of sharing the upstream TKEN key. Start from `docs/litellm-virtual-keys-spend-control.md` and `configs/litellm-virtual-keys-tken.yaml` to add Postgres-backed key management, per-key budgets, rate limits, default key settings, and key-generation upper bounds.
+
+For Docker Compose, start from `docker-compose.openwebui-litellm-tken.yml`, `configs/openwebui-litellm-docker-compose.env.example`, and `configs/litellm-openwebui-tken.compose.yaml`.
 
 ## Cursor
 
@@ -189,6 +193,7 @@ Run these before any tool gets production traffic:
 - Open WebUI guide: https://www.tken.shop/openwebui-openai-compatible-api/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=tool_integration&utm_id=gh_v070
 - LiteLLM guide: https://www.tken.shop/litellm-openai-compatible-gateway/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=tool_integration&utm_id=gh_v070
 - LiteLLM virtual keys: https://www.tken.shop/litellm-openai-compatible-gateway/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v140&utm_content=tool_integration_litellm_virtual_keys&utm_id=gh_v140
+- Open WebUI + LiteLLM Docker Compose: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v210&utm_content=tool_integration_openwebui_litellm_compose&utm_id=gh_v210
 - Tool selection comparison: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v150&utm_content=tool_integration_tool_selection&utm_id=gh_v150
 - Cursor guide: https://www.tken.shop/cursor-openai-compatible-base-url/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=tool_integration&utm_id=gh_v070
 - Continue guide: https://www.tken.shop/continue-openai-compatible-api/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=tool_integration&utm_id=gh_v070

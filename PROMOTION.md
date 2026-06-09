@@ -28,6 +28,18 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ## Release Notes
 
 ```text
+v0.21.0 adds a Docker Compose pack for developers starting Open WebUI and LiteLLM together while routing LiteLLM to TKEN:
+
+- Compose stack for Open WebUI -> LiteLLM -> TKEN
+- LiteLLM route config that maps `tken-chat` to a TKEN OpenAI-compatible upstream model
+- environment template that keeps the upstream TKEN key in LiteLLM and gives Open WebUI a LiteLLM key
+- preflight checks for `/v1/models` and one non-streaming chat request before connecting UI users
+- README, docs navigation, tool integration notes, package metadata, and release checks for the Compose workflow
+
+Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with Open WebUI, LiteLLM, OpenAI, or other model providers.
+```
+
+```text
 v0.20.0 adds a LlamaIndex integration pack for developers wiring TKEN into OpenAI-compatible LlamaIndex apps:
 
 - guide for `llama-index-llms-openai-like` with TKEN `api_base`

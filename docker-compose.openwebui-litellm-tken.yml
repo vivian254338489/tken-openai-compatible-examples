@@ -1,0 +1,31 @@
+services:
+  litellm:
+    image: docker.litellm.ai/berriai/litellm:main-latest
+    command: ["--config", "/app/config.yaml", "--port", "4000"]
+    ports:
+      - "4000:4000"
+    environment:
+      TKEN_API_KEY: ${TKEN_API_KEY:?Set TKEN_API_KEY in .env}
+      TKEN_LITELLM_MODEL: ${TKEN_LITELLM_MODEL:?Set TKEN_LITELLM_MODEL in .env}
+      LITELLM_MASTER_KEY: ${LITELLM_MASTER_KEY:?Set LITELLM_MASTER_KEY in .env}
+    volumes:
+      - ./configs/litellm-openwebui-tken.compose.yaml:/app/config.yaml:ro
+    restart: unless-stopped
+
+  openwebui:
+    image: ghcr.io/open-webui/open-webui:main
+    depends_on:
+      - litellm
+    ports:
+      - "3000:8080"
+    environment:
+      ENABLE_OPENAI_API: "True"
+      OPENAI_API_BASE_URL: http://litellm:4000/v1
+      OPENAI_API_KEY: ${OPENWEBUI_LITELLM_KEY:?Set OPENWEBUI_LITELLM_KEY in .env}
+      DEFAULT_MODELS: ${OPENWEBUI_DEFAULT_MODEL:-tken-chat}
+    volumes:
+      - open-webui-data:/app/backend/data
+    restart: unless-stopped
+
+volumes:
+  open-webui-data:

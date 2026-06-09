@@ -40,6 +40,7 @@ Disclosure: TKEN is an independent third-party API gateway. It is not officially
 | Preflight TKEN for agent and MCP-capable workflows | `docs/agent-mcp-gateway-preflight.md` |
 | Review MCP host config boundaries for TKEN | `docs/mcp-host-gateway-config.md` |
 | Run Open WebUI through LiteLLM to TKEN | `docs/openwebui-litellm-tken-stack.md` |
+| Start Open WebUI and LiteLLM with Docker Compose | `docs/openwebui-litellm-docker-compose.md` |
 | Issue LiteLLM virtual keys with budgets and rate limits | `docs/litellm-virtual-keys-spend-control.md` |
 | Wire Continue and Cursor-style coding tools to TKEN | `docs/continue-cursor-coding-tools.md` |
 | Choose between Cursor, Continue, Open WebUI, and LiteLLM | `docs/cursor-continue-openwebui-litellm-comparison.md` |
@@ -96,6 +97,7 @@ $env:TKEN_MODEL="replace-with-an-available-model"
 | Open WebUI minimal template | `configs/openwebui.env.example` |
 | LiteLLM | `configs/litellm-config.yaml` |
 | Open WebUI + LiteLLM + TKEN | `configs/openwebui-litellm.env.example`, `configs/litellm-openwebui-tken.yaml` |
+| Docker Compose Open WebUI + LiteLLM + TKEN | `docker-compose.openwebui-litellm-tken.yml`, `configs/openwebui-litellm-docker-compose.env.example`, `configs/litellm-openwebui-tken.compose.yaml` |
 | LiteLLM virtual keys and spend controls | `configs/litellm-virtual-keys-tken.yaml` |
 | Continue and Cursor coding tools | `configs/continue-tken.config.yaml`, `configs/cursor-continue-config.md` |
 | Production readiness template | `configs/production-readiness.template.json` |
@@ -104,7 +106,7 @@ $env:TKEN_MODEL="replace-with-an-available-model"
 | Agent gateway preflight profile | `configs/agent-gateway-preflight.json` |
 | MCP host gateway review profile | `configs/mcp-host-gateway-review.json` |
 
-For setup notes across these tools, see `docs/tool-integration-guide.md`. If you are choosing between Cursor, Continue, Open WebUI, and LiteLLM, start with `docs/cursor-continue-openwebui-litellm-comparison.md`. For direct Open WebUI setup, see `docs/openwebui-direct-tken.md`. For Open WebUI behind LiteLLM, see `docs/openwebui-litellm-tken-stack.md`. For LiteLLM virtual keys, see `docs/litellm-virtual-keys-spend-control.md`. For coding tools, see `docs/continue-cursor-coding-tools.md`. For agent and MCP-capable host preflight, see `docs/agent-mcp-gateway-preflight.md`. For MCP host config review, see `docs/mcp-host-gateway-config.md`.
+For setup notes across these tools, see `docs/tool-integration-guide.md`. If you are choosing between Cursor, Continue, Open WebUI, and LiteLLM, start with `docs/cursor-continue-openwebui-litellm-comparison.md`. For direct Open WebUI setup, see `docs/openwebui-direct-tken.md`. For Open WebUI behind LiteLLM, see `docs/openwebui-litellm-tken-stack.md`; for a runnable local container stack, use `docs/openwebui-litellm-docker-compose.md`. For LiteLLM virtual keys, see `docs/litellm-virtual-keys-spend-control.md`. For coding tools, see `docs/continue-cursor-coding-tools.md`. For agent and MCP-capable host preflight, see `docs/agent-mcp-gateway-preflight.md`. For MCP host config review, see `docs/mcp-host-gateway-config.md`.
 
 For framework integrations, start with `docs/vercel-ai-sdk-openai-compatible.md` for Vercel AI SDK apps, `docs/langchain-openai-compatible.md` for LangChain chains or agents, and `docs/llamaindex-openai-compatible.md` for LlamaIndex query engines or agents. Validate `/v1/models` and one non-streaming chat request before enabling streaming, tools, structured output, embeddings, query engines, or agent loops.
 

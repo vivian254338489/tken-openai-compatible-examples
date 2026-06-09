@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.21.0
+
+- Added a Docker Compose guide for starting Open WebUI and LiteLLM together while routing LiteLLM to TKEN.
+- Added a Compose file, LiteLLM route config, and environment template that keep the upstream TKEN key in LiteLLM and give Open WebUI a LiteLLM key.
+- Added preflight checks for `/v1/models` and one non-streaming chat request before connecting UI users.
+- Updated README, docs navigation, tool integration notes, promotion copy, package metadata, and release checks for the Compose asset.
+
 ## v0.20.0
 
 - Added a LlamaIndex integration guide for using `llama-index-llms-openai-like` with TKEN through `api_base`.
