@@ -29,6 +29,7 @@ Disclosure: TKEN is an independent third-party API gateway. It is not officially
 | Smoke-test SDK streaming, JSON mode, and tool calls | `docs/openai-sdk-capability-smoke.md` |
 | Use Vercel AI SDK with an OpenAI-compatible provider | `docs/vercel-ai-sdk-openai-compatible.md` |
 | Use LangChain with an OpenAI-compatible chat model | `docs/langchain-openai-compatible.md` |
+| Use LlamaIndex with an OpenAI-compatible LLM route | `docs/llamaindex-openai-compatible.md` |
 | Run endpoint preflight and interpret tester output | `docs/endpoint-preflight-playbook.md` |
 | Check endpoint behavior before launch | `docs/compatibility-checklist.md` |
 | Debug 401, 404, model, quota, timeout, and CORS errors | `docs/troubleshooting.md` |
@@ -80,6 +81,7 @@ $env:TKEN_MODEL="replace-with-an-available-model"
 | Python OpenAI SDK chat completion | `examples/python-openai-sdk.py` |
 | Python OpenAI SDK streaming, JSON, and tool smoke tests | `examples/python-openai-sdk-capability-smoke.py` |
 | LangChain Python with `langchain-openai` | `examples/langchain-python-openai-compatible.py` |
+| LlamaIndex Python with `llama-index-llms-openai-like` | `examples/llamaindex-openai-compatible.py` |
 | Node.js `/models` and chat smoke test | `examples/smoke-test.mjs` |
 | Cost-aware route-level model selection | `examples/model-router.mjs` |
 | Reusable OpenAI-compatible endpoint tester | `tools/endpoint-tester.mjs` |
@@ -104,7 +106,7 @@ $env:TKEN_MODEL="replace-with-an-available-model"
 
 For setup notes across these tools, see `docs/tool-integration-guide.md`. If you are choosing between Cursor, Continue, Open WebUI, and LiteLLM, start with `docs/cursor-continue-openwebui-litellm-comparison.md`. For direct Open WebUI setup, see `docs/openwebui-direct-tken.md`. For Open WebUI behind LiteLLM, see `docs/openwebui-litellm-tken-stack.md`. For LiteLLM virtual keys, see `docs/litellm-virtual-keys-spend-control.md`. For coding tools, see `docs/continue-cursor-coding-tools.md`. For agent and MCP-capable host preflight, see `docs/agent-mcp-gateway-preflight.md`. For MCP host config review, see `docs/mcp-host-gateway-config.md`.
 
-For framework integrations, start with `docs/vercel-ai-sdk-openai-compatible.md` for Vercel AI SDK apps and `docs/langchain-openai-compatible.md` for LangChain chains or agents. Validate `/v1/models` and one non-streaming chat request before enabling streaming, tools, structured output, or agent loops.
+For framework integrations, start with `docs/vercel-ai-sdk-openai-compatible.md` for Vercel AI SDK apps, `docs/langchain-openai-compatible.md` for LangChain chains or agents, and `docs/llamaindex-openai-compatible.md` for LlamaIndex query engines or agents. Validate `/v1/models` and one non-streaming chat request before enabling streaming, tools, structured output, embeddings, query engines, or agent loops.
 
 For CI checks, see `docs/ci-endpoint-smoke-tests.md`. The included GitHub Actions workflow is manual only, uses the `TKEN_API_KEY` repository secret, and defaults to `/models` reachability before optional chat completion testing.
 
@@ -197,6 +199,13 @@ LangChain Python:
 ```bash
 python -m pip install -U langchain-openai
 python examples/langchain-python-openai-compatible.py
+```
+
+LlamaIndex Python:
+
+```bash
+python -m pip install -U llama-index llama-index-llms-openai-like
+python examples/llamaindex-openai-compatible.py
 ```
 
 ## SDK Capability Smoke Tests

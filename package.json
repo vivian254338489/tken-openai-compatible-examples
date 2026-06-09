@@ -1,6 +1,6 @@
 {
   "name": "tken-openai-compatible-examples",
-  "version": "0.19.0",
+  "version": "0.20.0",
   "private": false,
   "type": "module",
   "scripts": {
@@ -11,6 +11,7 @@
     "node:vercel-ai-sdk": "node examples/vercel-ai-sdk-openai-compatible.mjs",
     "node:langchain": "node examples/langchain-js-openai-compatible.mjs",
     "python:langchain": "python examples/langchain-python-openai-compatible.py",
+    "python:llamaindex": "python examples/llamaindex-openai-compatible.py",
     "node:router": "node examples/model-router.mjs",
     "smoke": "node examples/smoke-test.mjs",
     "test:endpoint": "node tools/endpoint-tester.mjs"

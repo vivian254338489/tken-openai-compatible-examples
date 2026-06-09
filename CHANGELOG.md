@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.20.0
+
+- Added a LlamaIndex integration guide for using `llama-index-llms-openai-like` with TKEN through `api_base`.
+- Added a runnable Python LlamaIndex example for a direct LLM smoke test before query engines, retrievers, or agents.
+- Added guardrails for embeddings, function calling, query engines, low-limit agent tests, and redacted evidence.
+- Updated README, docs navigation, tool integration notes, promotion copy, package scripts, and release checks for LlamaIndex adoption.
+
 ## v0.19.0
 
 - Added Vercel AI SDK and LangChain integration guides for using TKEN through OpenAI-compatible base URL settings.

@@ -10,6 +10,7 @@ curl
 nodejs
 python
 openai-sdk
+llamaindex
 litellm
 openwebui
 cursor
@@ -25,6 +26,17 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ```
 
 ## Release Notes
+
+```text
+v0.20.0 adds a LlamaIndex integration pack for developers wiring TKEN into OpenAI-compatible LlamaIndex apps:
+
+- guide for `llama-index-llms-openai-like` with TKEN `api_base`
+- runnable Python example for a direct LLM smoke test before query engines or agents
+- guardrails for embeddings, retrievers, function calling, structured output, low-limit agent tests, and redacted evidence
+- README, docs navigation, tool integration notes, package scripts, and release checks for LlamaIndex adoption
+
+Disclosure: TKEN is an independent third-party API gateway and is not officially affiliated with LlamaIndex, OpenAI, or other model providers.
+```
 
 ```text
 v0.19.0 adds framework integration examples for developers wiring TKEN into Vercel AI SDK and LangChain apps:

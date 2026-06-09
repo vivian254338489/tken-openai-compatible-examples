@@ -54,6 +54,25 @@ const chat = new ChatOpenAI({
 
 For Python, pass `base_url` to `langchain_openai.ChatOpenAI`. Start with one direct `invoke` call before using chains, retrievers, tools, or agents. See `docs/langchain-openai-compatible.md`, `examples/langchain-js-openai-compatible.mjs`, and `examples/langchain-python-openai-compatible.py`.
 
+## LlamaIndex
+
+Use LlamaIndex's OpenAI-like LLM wrapper with a custom API base:
+
+```python
+from llama_index.llms.openai_like import OpenAILike
+
+llm = OpenAILike(
+    model=os.environ["TKEN_MODEL"],
+    api_base=os.environ.get("TKEN_BASE_URL", "https://www.tken.shop/v1"),
+    api_key=os.environ["TKEN_API_KEY"],
+    is_chat_model=True,
+    is_function_calling_model=False,
+    context_window=8192,
+)
+```
+
+Start with one direct `llm.complete` call before using query engines, retrievers, embeddings, or agents. Configure embeddings explicitly instead of assuming the same chat route supports them. See `docs/llamaindex-openai-compatible.md` and `examples/llamaindex-openai-compatible.py`.
+
 ## Open WebUI
 
 Use a server-side environment file or deployment secret:
