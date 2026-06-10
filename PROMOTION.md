@@ -28,6 +28,17 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ## Release Notes
 
 ```text
+v0.24.0 adds an OpenAI SDK base URL quickcheck pack for developers migrating an existing OpenAI SDK app to TKEN:
+
+- no-network CLI that validates base URL shape, /v1 path, API-key environment presence, and model selection readiness
+- guide covering Node.js openai `baseURL`, Python openai `base_url`, migration order, compatibility matrix, and failure map
+- endpoint-test sequence that separates config mistakes from live /models and chat-completion failures
+- README, docs navigation, tools documentation, package scripts, and release checks for SDK migration intent
+
+Disclosure: TKEN is an independent third-party OpenAI-compatible API gateway and is not officially affiliated with OpenAI or other model providers.
+```
+
+```text
 v0.23.0 adds a smoke evidence runner for developers who need safe, paste-ready endpoint validation artifacts before filing issues or rollout notes:
 
 - no-dependency CLI for Markdown or JSON evidence after GET /models and optional non-streaming POST /chat/completions

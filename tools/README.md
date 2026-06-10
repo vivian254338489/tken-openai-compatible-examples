@@ -2,6 +2,18 @@
 
 Use these CLIs to validate an OpenAI-compatible base URL before wiring it into an SDK, agent, proxy, or UI.
 
+## OpenAI SDK Base URL Quickcheck
+
+Use this no-network check before an SDK migration or CI endpoint smoke test:
+
+```bash
+node tools/openai-sdk-base-url-quickcheck.mjs
+```
+
+It validates that the base URL is an absolute URL ending in `/v1`, confirms whether the configured API-key environment variable is present, and reminds you to choose a model from `/v1/models`. It never calls the API and never prints key values.
+
+For the migration matrix and failure map, see `../docs/openai-sdk-base-url-quickcheck.md`.
+
 ## Endpoint Tester
 
 ```bash

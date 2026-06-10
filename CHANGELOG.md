@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.24.0
+
+- Added a no-network OpenAI SDK base URL quickcheck CLI for validating `/v1` URL shape, API-key environment presence, and model selection before endpoint tests.
+- Added a quickcheck guide with Node.js `baseURL`, Python `base_url`, migration sequence, compatibility matrix, and failure map for OpenAI SDK apps.
+- Updated README, docs navigation, tools documentation, package scripts, promotion copy, and release checks for SDK base URL migration intent.
+
 ## v0.23.0
 
 - Added a no-dependency smoke evidence runner for Markdown or JSON endpoint evidence after `/models` and optional non-streaming chat checks.

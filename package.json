@@ -1,12 +1,13 @@
 {
   "name": "tken-openai-compatible-examples",
-  "version": "0.23.0",
+  "version": "0.24.0",
   "private": false,
   "type": "module",
   "scripts": {
     "check": "node check.mjs",
     "node:chat": "node examples/node-chat.mjs",
     "node:sdk": "node examples/node-openai-sdk.mjs",
+    "sdk:base-url:quickcheck": "node tools/openai-sdk-base-url-quickcheck.mjs",
     "node:sdk:capabilities": "node examples/node-openai-sdk-capability-smoke.mjs",
     "node:vercel-ai-sdk": "node examples/vercel-ai-sdk-openai-compatible.mjs",
     "node:langchain": "node examples/langchain-js-openai-compatible.mjs",

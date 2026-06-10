@@ -26,6 +26,7 @@ Disclosure: TKEN is an independent third-party API gateway. It is not officially
 | --- | --- |
 | Evaluate an OpenAI-compatible gateway before adoption | `docs/api-gateway-evaluation.md` |
 | Move an existing SDK app to a custom base URL | `docs/sdk-migration-guide.md` |
+| Quickcheck OpenAI SDK base URL config before endpoint tests | `docs/openai-sdk-base-url-quickcheck.md` |
 | Smoke-test SDK streaming, JSON mode, and tool calls | `docs/openai-sdk-capability-smoke.md` |
 | Use Vercel AI SDK with an OpenAI-compatible provider | `docs/vercel-ai-sdk-openai-compatible.md` |
 | Use LangChain with an OpenAI-compatible chat model | `docs/langchain-openai-compatible.md` |
@@ -88,6 +89,7 @@ $env:TKEN_MODEL="replace-with-an-available-model"
 | Node.js `/models` and chat smoke test | `examples/smoke-test.mjs` |
 | Cost-aware route-level model selection | `examples/model-router.mjs` |
 | Reusable OpenAI-compatible endpoint tester | `tools/endpoint-tester.mjs` |
+| No-network OpenAI SDK base URL quickcheck | `tools/openai-sdk-base-url-quickcheck.mjs` |
 | Redacted smoke evidence runner | `tools/smoke-evidence.mjs` |
 | Manual GitHub Actions endpoint smoke test | `.github/workflows/tken-endpoint-smoke.yml` |
 | Browser/Web UI config | `examples/web-ui-config.js` |
@@ -193,6 +195,7 @@ npm install openai
 Run:
 
 ```bash
+npm run sdk:base-url:quickcheck
 node examples/node-openai-sdk.mjs
 ```
 
@@ -207,6 +210,7 @@ python -m pip install openai
 Run:
 
 ```bash
+node tools/openai-sdk-base-url-quickcheck.mjs
 python examples/python-openai-sdk.py
 ```
 

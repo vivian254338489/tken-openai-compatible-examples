@@ -10,7 +10,7 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 2. Pick one model ID returned by `/v1/models`.
 3. Run a non-streaming chat completion with the tester.
 4. Save redacted status and latency evidence with `docs/smoke-evidence-runner.md`.
-5. Switch one OpenAI SDK integration to `https://www.tken.shop/v1`.
+5. Run `docs/openai-sdk-base-url-quickcheck.md` before switching one OpenAI SDK integration to `https://www.tken.shop/v1`.
 6. If you prefer API-client imports before code, use `docs/api-client-collections.md`.
 7. If your app uses Vercel AI SDK, LangChain, or LlamaIndex, wire one direct non-streaming call before chains, query engines, tools, or agents.
 8. Run `docs/openai-sdk-capability-smoke.md` for streaming, JSON mode, and tool calls only if your app uses those features.
@@ -23,6 +23,7 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 | --- | --- |
 | Evaluate an API gateway before adoption | `docs/api-gateway-evaluation.md` |
 | Move an existing SDK app | `docs/sdk-migration-guide.md` |
+| Quickcheck OpenAI SDK base URL config | `docs/openai-sdk-base-url-quickcheck.md` |
 | Smoke-test SDK streaming, JSON mode, and tool calls | `docs/openai-sdk-capability-smoke.md` |
 | Use Vercel AI SDK with TKEN | `docs/vercel-ai-sdk-openai-compatible.md` |
 | Use LangChain with TKEN | `docs/langchain-openai-compatible.md` |
@@ -53,6 +54,7 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 - Developer hub: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=docs_index&utm_id=gh_v070
 - Quickstart: https://www.tken.shop/quickstart/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=docs_index&utm_id=gh_v070
 - SDK base URL guide: https://www.tken.shop/openai-sdk-base-url/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=docs_index&utm_id=gh_v070
+- SDK base URL quickcheck: https://www.tken.shop/openai-sdk-base-url/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v240&utm_content=docs_sdk_base_url_quickcheck&utm_id=gh_v240
 - Pricing: https://www.tken.shop/pricing/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=docs_index&utm_id=gh_v070
 - API pricing guide: https://www.tken.shop/api-pricing-guide/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=docs_index&utm_id=gh_v070
 - Tool integration: https://www.tken.shop/developers/?utm_source=github&utm_medium=developer_repo&utm_campaign=tken_github_v070&utm_content=docs_tool_integration&utm_id=gh_v070
