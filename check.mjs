@@ -49,6 +49,7 @@ const required = [
   "tools/openai-sdk-base-url-quickcheck.mjs",
   "tools/smoke-evidence.mjs",
   "docs/README.md",
+  "docs/integration-decision-map.md",
   "docs/api-gateway-evaluation.md",
   "docs/sdk-migration-guide.md",
   "docs/openai-sdk-base-url-quickcheck.md",

@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.25.0
+
+- Added an integration decision map for choosing the first TKEN adoption path across API clients, SDKs, frameworks, Open WebUI, LiteLLM, coding tools, CI, and agent or MCP hosts.
+- Added risk signals, safe evidence guidance, and example adoption paths that keep `/v1/models` and one non-streaming chat request ahead of broader rollouts.
+- Updated README, docs navigation, promotion copy, package metadata, and release checks for the decision-map asset.
+
 ## v0.24.0
 
 - Added a no-network OpenAI SDK base URL quickcheck CLI for validating `/v1` URL shape, API-key environment presence, and model selection before endpoint tests.

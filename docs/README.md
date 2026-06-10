@@ -2,7 +2,7 @@
 
 These docs are for developers testing TKEN as an independent OpenAI-compatible API gateway.
 
-Start with the CLI tester, then migrate one SDK call, then add cost and reliability guardrails before routing production traffic.
+Start with `docs/integration-decision-map.md` if you have not chosen a workflow yet. Otherwise, start with the CLI tester, then migrate one SDK call, then add cost and reliability guardrails before routing production traffic.
 
 ## Recommended Order
 
@@ -21,6 +21,7 @@ Start with the CLI tester, then migrate one SDK call, then add cost and reliabil
 
 | Need | Guide |
 | --- | --- |
+| Choose the first integration path | `docs/integration-decision-map.md` |
 | Evaluate an API gateway before adoption | `docs/api-gateway-evaluation.md` |
 | Move an existing SDK app | `docs/sdk-migration-guide.md` |
 | Quickcheck OpenAI SDK base URL config | `docs/openai-sdk-base-url-quickcheck.md` |

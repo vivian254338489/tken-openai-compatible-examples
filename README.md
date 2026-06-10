@@ -24,6 +24,7 @@ Disclosure: TKEN is an independent third-party API gateway. It is not officially
 
 | Need | Guide |
 | --- | --- |
+| Choose the first integration path | `docs/integration-decision-map.md` |
 | Evaluate an OpenAI-compatible gateway before adoption | `docs/api-gateway-evaluation.md` |
 | Move an existing SDK app to a custom base URL | `docs/sdk-migration-guide.md` |
 | Quickcheck OpenAI SDK base URL config before endpoint tests | `docs/openai-sdk-base-url-quickcheck.md` |

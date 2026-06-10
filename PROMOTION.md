@@ -28,6 +28,18 @@ Examples and smoke tests for using TKEN as an independent OpenAI-compatible mult
 ## Release Notes
 
 ```text
+v0.25.0 adds an integration decision map for developers choosing where to start with TKEN:
+
+- path picker for API clients, OpenAI SDK apps, Vercel AI SDK, LangChain, LlamaIndex, Open WebUI, LiteLLM, coding tools, CI, and agent or MCP hosts
+- default sequence that keeps /v1/models and one non-streaming chat request ahead of broader rollout
+- risk-signal table for auth, model discovery, streaming, tool calls, UI sharing, and agent spend failures
+- safe evidence checklist that avoids API keys, private prompts, customer data, provider dashboards, billing screens, and account identifiers
+- README, docs navigation, package metadata, and release checks for faster developer self-selection
+
+Disclosure: TKEN is an independent third-party OpenAI-compatible API gateway and is not officially affiliated with OpenAI, model providers, or named developer tools.
+```
+
+```text
 v0.24.0 adds an OpenAI SDK base URL quickcheck pack for developers migrating an existing OpenAI SDK app to TKEN:
 
 - no-network CLI that validates base URL shape, /v1 path, API-key environment presence, and model selection readiness
